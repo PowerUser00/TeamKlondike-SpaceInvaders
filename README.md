@@ -1,2 +1,4 @@
-# TeamKlondike-SpaceInvaders
-A game being developed by Team Klondike at DigiPen WaNIC
+# What is this?
+This is a game being developed by Team Klondike at DigiPen WaNIC.
+# Why did you choose ZeroEngine?
+Because we already knew how to use it a bit. Also, it is (mostly) functional.
