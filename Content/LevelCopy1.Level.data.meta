@@ -3,8 +3,8 @@ DataContent
 {
 	DataBuilder 
 	{
-		var Name = "Level"
-		var ResourceId = 0x59097123da28242a
+		var Name = "LevelCopy1"
+		var ResourceId = 0x5c8e05c8f0658dbf
 		var LoaderType = "Level"
 		var Version = 0
 	}
