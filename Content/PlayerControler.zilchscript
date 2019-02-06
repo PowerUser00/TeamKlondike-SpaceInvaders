@@ -1,0 +1,102 @@
+/************************************
+Blakely North
+10-22-2018
+ControlModes the player
+************************************/
+class PlayerController : ZilchComponent
+{
+//This chooses whether we show debug lines or not
+[Property]
+var DebugOn : Boolean = false;
+//Technically this is acceleration magnitude
+[Property]
+var Speed : Real = 10.0;
+//technically turning acceleration
+[Property]
+var TurnSpeed : Real = 20;
+
+//This is the key to move up/forward
+[Property]
+var UpKey : Keys = Keys.W;
+//This is the key to move down/backward
+[Property]
+var DownKey : Keys = Keys.S;
+//This is the key to move right
+[Property]
+var RightKey : Keys = Keys.D;
+//This is the key to move left
+[Property]
+var LeftKey : Keys = Keys.A;
+
+function Initialize(init : CogInitializer)
+{
+Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+}
+
+function OnLogicUpdate(event : UpdateEvent)
+{
+var movement = Real3();
+var turnValue = Real3();
+var currentAngle = this.Owner.Transform.EulerAngles.Z + Math.Pi / 2;
+
+
+//check if the up key is down
+if(Zero.Keyboard.KeyIsDown(this.UpKey))
+{
+//use this to debug if need
+//Console.WriteLine("up key is currently down");
+movement.X += Math.Cos(currentAngle);
+movement.Y += Math.Sin(currentAngle);
+}
+//check if the down key is down
+if(Zero.Keyboard.KeyIsDown(this.DownKey))
+{
+movement.X -= Math.Cos(currentAngle);
+movement.Y -= Math.Sin(currentAngle);
+
+}
+//check if the right key is down
+if(Zero.Keyboard.KeyIsDown(this.RightKey))
+{
+turnValue.Z -= Math.ToRadians(this.TurnSpeed);
+}
+//check if the left key is down
+if(Zero.Keyboard.KeyIsDown(this.LeftKey))
+{
+turnValue.Z += Math.ToRadians(this.TurnSpeed);
+}
+
+//making sure movement is a length of 1
+movement = Math.Normalize(movement);
+
+var accel = movement * this.Speed;
+//increase the velocity based on the movement vector 
+this.Owner.RigidBody.Velocity += accel * event.Dt;
+
+//adjust the angular velocity here
+this.Owner.RigidBody.AngularVelocity += turnValue * event.Dt;
+if(this.DebugOn)
+{
+this.DebugDraw(this.Owner.RigidBody.Velocity, accel);
+}
+}
+//this function draws dbug velocity and acceleration lines when run
+function DebugDraw(vel : Real3, accel : Real3)
+{
+//velocity line to be drawn and many values set
+var velLine = DebugLine();
+velLine.Start = this.Owner.Transform.Translation;
+velLine.End = velLine.Start + vel;
+velLine.HeadSize = 0.2;
+velLine.Color = Real4(0, 1, 0, 1);
+DebugDraw.Add(velLine);
+
+//acceleration line to be drawn and many values set
+var accelLine = DebugLine();
+accelLine.Start = this.Owner.Transform.Translation;
+accelLine.End = accelLine.Start + accel;
+accelLine.HeadSize = 0.2;
+accelLine.Color = Real4(1, 0, 0, 1);
+DebugDraw.Add(accelLine);
+}
+}

@@ -1,0 +1,23 @@
+// Blakely North
+//10-08
+//Destroies owner after some time
+
+class TimedDeath : ZilchComponent
+{
+  //time to destroy
+[Property]
+  var Timer : Real = 0;
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+  }
+
+  function OnLogicUpdate(event : UpdateEvent)
+  {
+    this.Timer -= event.Dt;
+      if(this.Timer <= 0)
+      {
+        this.Owner.Destroy();
+      }
+  }
+}

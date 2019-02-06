@@ -1,0 +1,26 @@
+/************************************
+Blakely North
+10-22-2018
+removes from the total # of blocks on player collision
+************************************/
+class PointsOnDestroy : ZilchComponent
+{
+  var BlockRemoved : Boolean = false;
+  function Initialize(init : CogInitializer)
+  {
+    //Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+  }
+
+  function OnLogicUpdate(event : UpdateEvent)
+  {
+  }
+  
+  function Destroyed()
+  {
+    if(!this.BlockRemoved && !this.Space.MarkedForDestruction && this.LevelSettings != null && !this.GameSession.IsEditorMode())
+    {
+      this.BlockRemoved = true;
+      this.LevelSettings.LevelVars.BlocksLeft -= 1;
+    }
+  }
+}

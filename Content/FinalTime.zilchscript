@@ -1,0 +1,19 @@
+/************************************
+Blakely North
+10-22-2018
+The final time of the player.
+************************************/
+
+class FinalTime : ZilchComponent
+{
+  var FinalTime : Real = 0;
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+  }
+
+  function OnLogicUpdate(event : UpdateEvent)
+  {
+    this.Owner.SpriteText.Text = "Finishing Time: `this.Space.LevelVars.FinalTime`";
+  }
+}

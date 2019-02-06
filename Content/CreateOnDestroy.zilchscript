@@ -1,0 +1,26 @@
+/************************************
+Blakely North
+10-22-2018
+Creates an arcetype when the owner is destroied
+************************************/
+class CreateOnDestroy : ZilchComponent
+{
+  [Property]
+  var ArchToBeMade : Archetype = null;
+  function Initialize(init : CogInitializer)
+  {
+    
+  }
+
+  function Destroyed()
+  {
+    //check if the space is to be destroied
+    if( !this.Space.MarkedForDestruction )
+    {
+      if(this.ArchToBeMade != null)
+      {
+        this.Space.CreateAtPosition(this.ArchToBeMade, this.Owner.Transform.Translation);
+      }
+    }
+  }
+}

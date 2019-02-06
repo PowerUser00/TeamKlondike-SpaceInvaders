@@ -1,0 +1,58 @@
+/************************************
+Blakely North
+10-05-2018
+Add this to things that needs health
+************************************/
+class HealthChange : ZilchEvent
+{
+  var THATS_A_LOT_OF_DAMAGE = 1;
+}
+class Death : ZilchEvent
+{
+  
+}
+
+class Health : ZilchComponent
+{
+  //this adds the event to the event library(events.something)
+  sends HealthChange : HealthChange;
+  sends DeathEvent : Death;
+  
+  [Property]
+  var MaxHP :Integer = 100;
+  var CurrentHP : Integer = 100;
+  //send death event?
+  var SendDeathEvent : Boolean = true;
+  //destroy @ 0 hp?
+  [Property]
+  var DestroyAt0HP : Boolean = true;
+  function Initialize(init : CogInitializer)
+  {
+    this.CurrentHP = this.MaxHP;
+    Zero.Connect(this.Owner, Events.HealthChange, this.OnHealthChange);
+  }
+  function OnHealthChange(event : HealthChange)
+  {
+    this.CurrentHP -= event.THATS_A_LOT_OF_DAMAGE;
+    //ensure not over max
+    if(this.CurrentHP >= this.MaxHP)
+    {
+    this.CurrentHP = this.MaxHP;
+  }
+  //check if below
+  if(this.CurrentHP <= 0)
+  {
+    if(this.SendDeathEvent)
+    {
+      //make event to send
+      var deathEvent = Death();
+      //send event
+      this.Owner.DispatchEvent(Events.DeathEvent, deathEvent);
+    }
+    if(this.DestroyAt0HP)
+    {
+      this.Owner.Destroy();
+    }
+  }
+}
+}

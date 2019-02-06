@@ -1,0 +1,33 @@
+/************************************
+Blakely North
+10-22-2018
+A set of universal vars.
+************************************/
+class LevelVars : ZilchComponent
+{
+  [Property]
+  var BlocksLeft : Integer = 36;
+  [Property]
+  var NextLevel : Level = null;
+  
+  var FinalTime : Real = 0;
+  var Timer : Real = 0;
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+  }
+
+  function OnLogicUpdate(event : UpdateEvent)
+  {
+    if(this.BlocksLeft <= 0)
+    {
+      this.Space.LoadLevel(this.NextLevel);
+    }
+    this.Timer += event.Dt;
+    
+    if(this.BlocksLeft <= 0)
+    {
+      this.Space.LevelVars.FinalTime = this.Timer;
+    }
+  }
+}

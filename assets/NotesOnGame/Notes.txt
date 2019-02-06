@@ -1,0 +1,3 @@
+Scoring------------------------------------
+UFO:
+Score is an int between 50 and 300

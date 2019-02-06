@@ -1,0 +1,30 @@
+/************************************
+Blakely North
+10-22-2018
+Destroies the owner on colision.
+************************************/
+class Destroyoncollide : ZilchComponent
+{
+  [Property]
+  var DeathDelay : Real = 0.05;
+  
+  function Initialize(init : CogInitializer)
+  {
+    
+    Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+    
+  }
+
+
+  function OnCollisionStarted(event : CollisionEvent)
+  {
+    //set up action sequence
+    var seq = Actions.Sequence(this.Owner.Actions);
+    //add delay to action sequence
+    Actions.Delay(seq, this.DeathDelay);
+    //////DESTROY
+    Actions.Call(seq, this.Owner.Destroy);
+    //this.LevelSettings.LevelVars.BlocksLeft -= 1;
+
+  }
+}
