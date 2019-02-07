@@ -77,7 +77,7 @@ Level
 		var Name = "EditorCamera"
 		Transform 
 		{
-			var Translation = Real3{0.561715066, 4.33162022, 20}
+			var Translation = Real3{0.167729735, -0.388783514, 30}
 			var Scale = Real3{1, 1, 1}
 			var Rotation = Quaternion{0, -1.09278471e-08, 0, 1}
 		}
@@ -130,7 +130,7 @@ Level
 			var FarPlane = 500
 			var PerspectiveMode = PerspectiveMode.Orthographic
 			var FieldOfView = 45
-			var Size = 18.6084976
+			var Size = 26.9729729
 		}
 		EditorCameraController 
 		{
@@ -139,7 +139,7 @@ Level
 			var LookDistance = 20
 			var VerticalAngle = 0
 			var HorizontalAngle = 0
-			var LookTarget = Real3{0.561715066, 4.33162022, 2.45533833e-08}
+			var LookTarget = Real3{0.167729735, -0.388783514, 10}
 			var MoveSensitivity = 1
 		}
 	}
@@ -196,7 +196,7 @@ Level
 				var PathPreference1 = CogPathPreference.SpaceRelative
 				var PathPreference2 = CogPathPreference.Absolute
 			}
-			var ResolutionOrAspect = Integer2{224, 256}
+			var ResolutionOrAspect = Integer2{521, 441}
 			var RenderToViewport = true
 			var ForwardViewportEvents = false
 			var ViewportScaling = ViewportScaling.Letterbox
@@ -220,10 +220,10 @@ Level
 	}
 	Cog [ContextId:5]
 	{
-		var Name = "Sprite"
+		var Name = "WALL_L"
 		Transform 
 		{
-			var Translation = Real3{-9.25, -9.05990601e-06, 0}
+			var Translation = Real3{-12.25, -9.05990601e-06, 0}
 			var Scale = Real3{1, 20, 1}
 			var Rotation = Quaternion{0, 0, 0, 1}
 		}
@@ -237,7 +237,7 @@ Level
 			var LocalAabbHalfExtents = Real3{1, 1, 1}
 			var GroupSortValue = 0
 			var Material = "582c575af53d18c9:AlphaSprite"
-			var VertexColor = Real4{1, 1, 1, 1}
+			var VertexColor = Real4{0, 0, 0, 1}
 			var GeometryMode = SpriteGeometryMode.ZPlane
 			var SpriteSource = "5275aa4d802dd6dc:Square"
 			var FlipX = false
@@ -249,11 +249,11 @@ Level
 	}
 	Cog [ContextId:6]
 	{
-		var Name = "Sprite"
+		var Name = "WALL_U"
 		Transform 
 		{
 			var Translation = Real3{0, 10.5, 0}
-			var Scale = Real3{17.5, 1, 1}
+			var Scale = Real3{23.5, 1, 1}
 			var Rotation = Quaternion{0, 0, 0, 1}
 		}
 		Sprite 
@@ -278,11 +278,11 @@ Level
 	}
 	Cog [ContextId:7]
 	{
-		var Name = "Sprite"
+		var Name = "WALL_D"
 		Transform 
 		{
 			var Translation = Real3{0, -10.5, 0}
-			var Scale = Real3{17.5, 1, 1}
+			var Scale = Real3{23.5, 1, 1}
 			var Rotation = Quaternion{0, 0, 0, 1}
 		}
 		Sprite 
@@ -307,10 +307,39 @@ Level
 	}
 	Cog [ContextId:8]
 	{
-		var Name = "Sprite"
+		var Name = "GreenBoarder"
 		Transform 
 		{
-			var Translation = Real3{9.25, 1.00135803e-05, 0}
+			var Translation = Real3{0, -9, 0}
+			var Scale = Real3{23.5, 0.100000001, 1}
+			var Rotation = Quaternion{0, 0, 0, 1}
+		}
+		Sprite 
+		{
+			var Visible = true
+			var ViewCulling = true
+			var VisibilityEvents = true
+			var OverrideBoundingBox = false
+			var LocalAabbCenter = Real3{0, 0, 0}
+			var LocalAabbHalfExtents = Real3{1, 1, 1}
+			var GroupSortValue = 0
+			var Material = "582c575af53d18c9:AlphaSprite"
+			var VertexColor = Real4{0, 1, 0, 1}
+			var GeometryMode = SpriteGeometryMode.ZPlane
+			var SpriteSource = "5275aa4d802dd6dc:Square"
+			var FlipX = false
+			var FlipY = false
+			var AnimationActive = true
+			var AnimationSpeed = 1
+			var StartFrame = 0
+		}
+	}
+	Cog [ContextId:9]
+	{
+		var Name = "WALL_R"
+		Transform 
+		{
+			var Translation = Real3{12.25, 9.05990964e-06, 0}
 			var Scale = Real3{1, 20, 1}
 			var Rotation = Quaternion{0, 0, 0, 1}
 		}
@@ -324,7 +353,7 @@ Level
 			var LocalAabbHalfExtents = Real3{1, 1, 1}
 			var GroupSortValue = 0
 			var Material = "582c575af53d18c9:AlphaSprite"
-			var VertexColor = Real4{1, 1, 1, 1}
+			var VertexColor = Real4{0, 0, 0, 1}
 			var GeometryMode = SpriteGeometryMode.ZPlane
 			var SpriteSource = "5275aa4d802dd6dc:Square"
 			var FlipX = false
@@ -334,9 +363,9 @@ Level
 			var StartFrame = 0
 		}
 	}
-	Cog [ContextId:9]
+	Cog [ContextId:10]
 	{
-		var Name = "SpriteText"
+		var Name = "ScoreLabel"
 		Transform 
 		{
 			var Translation = Real3{-5.68809843, 8.75, 0}
@@ -356,15 +385,43 @@ Level
 			var VertexColor = Real4{1, 1, 1, 1}
 			var GeometryMode = SpriteGeometryMode.ZPlane
 			var Text = "SCORE"
-			var Font = "5cc745a84629f5e5:UnsteadyOversteer"
+			var Font = "5cc7f0a41ecf725f:UnsteadyOversteer"
 			var FontSize = 128
 			var PixelsPerUnit = 128
 			var TextAlign = TextAlign.Center
 		}
 	}
-	Cog [ContextId:10]
+	Cog [ContextId:11]
 	{
-		var Name = "SpriteText"
+		var Name = "ScoreNum"
+		Transform 
+		{
+			var Translation = Real3{-3.18809843, 8.75, 0}
+			var Scale = Real3{1, 1, 1}
+			var Rotation = Quaternion{0, 0, 0, 1}
+		}
+		SpriteText 
+		{
+			var Visible = true
+			var ViewCulling = true
+			var VisibilityEvents = true
+			var OverrideBoundingBox = false
+			var LocalAabbCenter = Real3{0, 0, 0}
+			var LocalAabbHalfExtents = Real3{1, 1, 1}
+			var GroupSortValue = 0
+			var Material = "582c575af53d18c9:AlphaSprite"
+			var VertexColor = Real4{0, 1, 0, 1}
+			var GeometryMode = SpriteGeometryMode.ZPlane
+			var Text = "0"
+			var Font = "5cc7f0a41ecf725f:UnsteadyOversteer"
+			var FontSize = 128
+			var PixelsPerUnit = 128
+			var TextAlign = TextAlign.Center
+		}
+	}
+	Cog [ContextId:12]
+	{
+		var Name = "LivesText"
 		Transform 
 		{
 			var Translation = Real3{1.75, 8.75, 0}
@@ -383,11 +440,678 @@ Level
 			var Material = "582c575af53d18c9:AlphaSprite"
 			var VertexColor = Real4{1, 1, 1, 1}
 			var GeometryMode = SpriteGeometryMode.ZPlane
-			var Text = "IVES"
-			var Font = "5cc745a84629f5e5:UnsteadyOversteer"
+			var Text = "LIVES"
+			var Font = "5cc7f0a41ecf725f:UnsteadyOversteer"
 			var FontSize = 128
 			var PixelsPerUnit = 128
 			var TextAlign = TextAlign.Center
+		}
+	}
+	Cog [ContextId:13]
+	{
+		var Name = "NewText"
+		Transform 
+		{
+			var Translation = Real3{-9.75, -9.34274387, 0}
+			var Scale = Real3{1, 1, 1}
+			var Rotation = Quaternion{0, 0, 0, 1}
+		}
+		SpriteText 
+		{
+			var Visible = true
+			var ViewCulling = true
+			var VisibilityEvents = true
+			var OverrideBoundingBox = false
+			var LocalAabbCenter = Real3{0, 0, 0}
+			var LocalAabbHalfExtents = Real3{1, 1, 1}
+			var GroupSortValue = 0
+			var Material = "582c575af53d18c9:AlphaSprite"
+			var VertexColor = Real4{1, 1, 1, 1}
+			var GeometryMode = SpriteGeometryMode.ZPlane
+			var Text = "NEW"
+			var Font = "5cc7f0a41ecf725f:UnsteadyOversteer"
+			var FontSize = 128
+			var PixelsPerUnit = 128
+			var TextAlign = TextAlign.Center
+		}
+	}
+	Cog [ContextId:14]
+	{
+		var Name = "ExitText"
+		Transform 
+		{
+			var Translation = Real3{9.25, -9.34274387, 0}
+			var Scale = Real3{1, 1, 1}
+			var Rotation = Quaternion{0, 0, 0, 1}
+		}
+		SpriteText 
+		{
+			var Visible = true
+			var ViewCulling = true
+			var VisibilityEvents = true
+			var OverrideBoundingBox = false
+			var LocalAabbCenter = Real3{0, 0, 0}
+			var LocalAabbHalfExtents = Real3{1, 1, 1}
+			var GroupSortValue = 0
+			var Material = "582c575af53d18c9:AlphaSprite"
+			var VertexColor = Real4{1, 1, 1, 1}
+			var GeometryMode = SpriteGeometryMode.ZPlane
+			var Text = "EXIT"
+			var Font = "5cc7f0a41ecf725f:UnsteadyOversteer"
+			var FontSize = 128
+			var PixelsPerUnit = 128
+			var TextAlign = TextAlign.Center
+		}
+	}
+	Cog [ContextId:15]
+	{
+		var Name = "Player"
+		Transform 
+		{
+			var Translation = Real3{0, -7, 0}
+			var Scale = Real3{10, 10, 1}
+			var Rotation = Quaternion{0, 0, 0, 1}
+		}
+		Sprite 
+		{
+			var Visible = true
+			var ViewCulling = true
+			var VisibilityEvents = true
+			var OverrideBoundingBox = false
+			var LocalAabbCenter = Real3{0, 0, 0}
+			var LocalAabbHalfExtents = Real3{1, 1, 1}
+			var GroupSortValue = 0
+			var Material = "582c575af53d18c9:AlphaSprite"
+			var VertexColor = Real4{0, 1, 0, 1}
+			var GeometryMode = SpriteGeometryMode.ZPlane
+			var SpriteSource = "5cc77bb3dd50d877:laser_canon"
+			var FlipX = false
+			var FlipY = false
+			var AnimationActive = true
+			var AnimationSpeed = 1
+			var StartFrame = 0
+		}
+	}
+	Cog [ContextId:16]
+	{
+		var Name = "Player"
+		Transform 
+		{
+			var Translation = Real3{5, 8.5, 0}
+			var Scale = Real3{10, 10, 1}
+			var Rotation = Quaternion{0, 0, 0, 1}
+		}
+		Sprite 
+		{
+			var Visible = true
+			var ViewCulling = true
+			var VisibilityEvents = true
+			var OverrideBoundingBox = false
+			var LocalAabbCenter = Real3{0, 0, 0}
+			var LocalAabbHalfExtents = Real3{1, 1, 1}
+			var GroupSortValue = 0
+			var Material = "582c575af53d18c9:AlphaSprite"
+			var VertexColor = Real4{0, 1, 0, 1}
+			var GeometryMode = SpriteGeometryMode.ZPlane
+			var SpriteSource = "5cc77bb3dd50d877:laser_canon"
+			var FlipX = false
+			var FlipY = false
+			var AnimationActive = true
+			var AnimationSpeed = 1
+			var StartFrame = 0
+		}
+	}
+	Cog [ContextId:17]
+	{
+		var Name = "Player"
+		Transform 
+		{
+			var Translation = Real3{7.5, 8.5, 0}
+			var Scale = Real3{10, 10, 1}
+			var Rotation = Quaternion{0, 0, 0, 1}
+		}
+		Sprite 
+		{
+			var Visible = true
+			var ViewCulling = true
+			var VisibilityEvents = true
+			var OverrideBoundingBox = false
+			var LocalAabbCenter = Real3{0, 0, 0}
+			var LocalAabbHalfExtents = Real3{1, 1, 1}
+			var GroupSortValue = 0
+			var Material = "582c575af53d18c9:AlphaSprite"
+			var VertexColor = Real4{0, 1, 0, 1}
+			var GeometryMode = SpriteGeometryMode.ZPlane
+			var SpriteSource = "5cc77bb3dd50d877:laser_canon"
+			var FlipX = false
+			var FlipY = false
+			var AnimationActive = true
+			var AnimationSpeed = 1
+			var StartFrame = 0
+		}
+	}
+	Cog [ContextId:18]
+	{
+		var Name = "Player"
+		Transform 
+		{
+			var Translation = Real3{10, 8.5, 0}
+			var Scale = Real3{10, 10, 1}
+			var Rotation = Quaternion{0, 0, 0, 1}
+		}
+		Sprite 
+		{
+			var Visible = true
+			var ViewCulling = true
+			var VisibilityEvents = true
+			var OverrideBoundingBox = false
+			var LocalAabbCenter = Real3{0, 0, 0}
+			var LocalAabbHalfExtents = Real3{1, 1, 1}
+			var GroupSortValue = 0
+			var Material = "582c575af53d18c9:AlphaSprite"
+			var VertexColor = Real4{0, 1, 0, 1}
+			var GeometryMode = SpriteGeometryMode.ZPlane
+			var SpriteSource = "5cc77bb3dd50d877:laser_canon"
+			var FlipX = false
+			var FlipY = false
+			var AnimationActive = true
+			var AnimationSpeed = 1
+			var StartFrame = 0
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:19]
+	{
+		Transform 
+		{
+			var Translation = Real3{-8.75, 2.74999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:20]
+	{
+		Transform 
+		{
+			var Translation = Real3{5.25, 2.74999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:21]
+	{
+		Transform 
+		{
+			var Translation = Real3{-1.75000048, 2.74999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:22]
+	{
+		Transform 
+		{
+			var Translation = Real3{-5.25, 2.74999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:23]
+	{
+		Transform 
+		{
+			var Translation = Real3{8.75, 2.74999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:24]
+	{
+		Transform 
+		{
+			var Translation = Real3{1.74999952, 2.74999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:25]
+	{
+		Transform 
+		{
+			var Translation = Real3{-7, 2.74999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:26]
+	{
+		Transform 
+		{
+			var Translation = Real3{7, 2.74999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:27]
+	{
+		Transform 
+		{
+			var Translation = Real3{-4.76837158e-07, 2.74999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:28]
+	{
+		Transform 
+		{
+			var Translation = Real3{-3.5, 2.74999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:29]
+	{
+		Transform 
+		{
+			var Translation = Real3{3.49999952, 2.74999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:30]
+	{
+		Transform 
+		{
+			var Translation = Real3{-8.75, 1.24999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:31]
+	{
+		Transform 
+		{
+			var Translation = Real3{5.25, 1.24999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:32]
+	{
+		Transform 
+		{
+			var Translation = Real3{-1.75000048, 1.24999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:33]
+	{
+		Transform 
+		{
+			var Translation = Real3{-5.25, 1.24999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:34]
+	{
+		Transform 
+		{
+			var Translation = Real3{8.75, 1.24999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:35]
+	{
+		Transform 
+		{
+			var Translation = Real3{1.74999952, 1.24999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:36]
+	{
+		Transform 
+		{
+			var Translation = Real3{-7, 1.24999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:37]
+	{
+		Transform 
+		{
+			var Translation = Real3{7, 1.24999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:38]
+	{
+		Transform 
+		{
+			var Translation = Real3{-4.76837158e-07, 1.24999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:39]
+	{
+		Transform 
+		{
+			var Translation = Real3{-3.5, 1.24999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:40]
+	{
+		Transform 
+		{
+			var Translation = Real3{3.49999952, 1.24999976, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:41]
+	{
+		Transform 
+		{
+			var Translation = Real3{-8.75, -0.250000238, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:42]
+	{
+		Transform 
+		{
+			var Translation = Real3{5.25, -0.250000238, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:43]
+	{
+		Transform 
+		{
+			var Translation = Real3{-1.75000048, -0.250000238, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:44]
+	{
+		Transform 
+		{
+			var Translation = Real3{-5.25, -0.250000238, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:45]
+	{
+		Transform 
+		{
+			var Translation = Real3{8.75, -0.250000238, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:46]
+	{
+		Transform 
+		{
+			var Translation = Real3{1.74999952, -0.250000238, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:47]
+	{
+		Transform 
+		{
+			var Translation = Real3{-7, -0.250000238, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:48]
+	{
+		Transform 
+		{
+			var Translation = Real3{7, -0.250000238, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:49]
+	{
+		Transform 
+		{
+			var Translation = Real3{-4.76837158e-07, -0.250000238, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:50]
+	{
+		Transform 
+		{
+			var Translation = Real3{-3.5, -0.250000238, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:51]
+	{
+		Transform 
+		{
+			var Translation = Real3{3.49999952, -0.250000238, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:52]
+	{
+		Transform 
+		{
+			var Translation = Real3{-8.75, -1.75000024, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:53]
+	{
+		Transform 
+		{
+			var Translation = Real3{5.25, -1.75000024, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:54]
+	{
+		Transform 
+		{
+			var Translation = Real3{-1.75000048, -1.75000024, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:55]
+	{
+		Transform 
+		{
+			var Translation = Real3{-5.25, -1.75000024, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:56]
+	{
+		Transform 
+		{
+			var Translation = Real3{8.75, -1.75000024, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:57]
+	{
+		Transform 
+		{
+			var Translation = Real3{1.74999952, -1.75000024, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:58]
+	{
+		Transform 
+		{
+			var Translation = Real3{-7, -1.75000024, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:59]
+	{
+		Transform 
+		{
+			var Translation = Real3{7, -1.75000024, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:60]
+	{
+		Transform 
+		{
+			var Translation = Real3{-4.76837158e-07, -1.75000024, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:61]
+	{
+		Transform 
+		{
+			var Translation = Real3{-3.5, -1.75000024, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:62]
+	{
+		Transform 
+		{
+			var Translation = Real3{3.49999952, -1.75000024, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:63]
+	{
+		Transform 
+		{
+			var Translation = Real3{-8.75, 4.25, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:64]
+	{
+		Transform 
+		{
+			var Translation = Real3{5.25, 4.25, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:65]
+	{
+		Transform 
+		{
+			var Translation = Real3{-1.75000048, 4.25, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:66]
+	{
+		Transform 
+		{
+			var Translation = Real3{-5.25, 4.25, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:67]
+	{
+		Transform 
+		{
+			var Translation = Real3{8.75, 4.25, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:68]
+	{
+		Transform 
+		{
+			var Translation = Real3{1.74999952, 4.25, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:69]
+	{
+		Transform 
+		{
+			var Translation = Real3{-7, 4.25, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:70]
+	{
+		Transform 
+		{
+			var Translation = Real3{7, 4.25, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:71]
+	{
+		Transform 
+		{
+			var Translation = Real3{-4.76837158e-07, 4.25, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:72]
+	{
+		Transform 
+		{
+			var Translation = Real3{-3.5, 4.25, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
+		}
+	}
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:73]
+	{
+		Transform 
+		{
+			var Translation = Real3{3.49999952, 4.25, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
 }
