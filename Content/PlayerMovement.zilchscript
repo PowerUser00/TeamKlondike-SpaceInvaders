@@ -1,0 +1,30 @@
+// Copyright 2017 DigiPen USA Corportation
+
+
+class PlayerMovement : ZilchComponent
+{
+  [Property] var LeftKey : Keys = Keys.A;
+  [Property] var RightKey : Keys = Keys.D;
+  
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+  }
+  
+  function OnLogicUpdate(event : UpdateEvent)
+  {
+    var movement = Real3();
+    
+    //Check for left/right movement
+    if (Zero.Keyboard.KeyIsDown(this.LeftKey))
+    {
+      movement.X = -1;
+    }
+    if (Zero.Keyboard.KeyIsDown(this.RightKey))
+    {
+      movement.X = 1;
+    }
+    
+    this.Owner.Transform.Translation += movement;
+  }
+}
