@@ -1,0 +1,18 @@
+[Version:1]
+DataContent 
+{
+	DataBuilder 
+	{
+		var Name = "SweptPlayer2D"
+		var ResourceId = 0x592e756cbfcdacc5
+		var LoaderType = "Cog"
+		var Version = 0
+	}
+	ContentTags 
+	{
+		var Tags = Array
+		{
+			"SampleCharacterControllers[1.0]"
+		}
+	}
+}
