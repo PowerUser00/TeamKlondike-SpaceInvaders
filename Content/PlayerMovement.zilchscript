@@ -1,4 +1,8 @@
-// Copyright 2017 DigiPen USA Corportation
+/************************************
+James Ouyang
+2/22/2018
+Allows the player to move left and right along a certain distance
+************************************/
 
 
 class PlayerMovement : ZilchComponent
