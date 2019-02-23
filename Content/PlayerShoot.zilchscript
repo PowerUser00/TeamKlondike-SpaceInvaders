@@ -8,10 +8,12 @@ This will fire all the cannons
   var Projectile : Archetype = null;
   //speed of the projectile
   [Property]
-  var ProjSpeed : Real = 20;
+  var ProjSpeed : Real = 1;
   //this variable determines whether the player can fire or not
   [Property]
   var CanFire : Boolean = true;
+  [Property]
+  var FireOffset : Real3 = Real3(0, 1, 0);
   
   function Initialize(init : CogInitializer)
   {
@@ -22,7 +24,7 @@ This will fire all the cannons
   //function to fire a projectile in the chosen direction
   function Fire(direction : Real3)
   {
-    var spawnPos = this.Owner.Transform.Translation;
+    var spawnPos = this.Owner.Transform.Translation + this.FireOffset;
     
     var projectile = this.Space.CreateAtPosition(this.Projectile, spawnPos);
     
