@@ -7,6 +7,5 @@ DataContent
 		var ResourceId = 0x576f215c0825a2d3
 		var LoaderType = "GameSession"
 		var Version = 0
-		var ShowInEditor = true
 	}
 }
