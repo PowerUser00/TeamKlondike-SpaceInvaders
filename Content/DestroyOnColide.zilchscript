@@ -31,6 +31,8 @@ class DestroyOnCollide : ZilchComponent
   }
   function Destroyed()
   {
-    this.ResetFire.PlayerShoot.CanFire = true;
+    
+    if(this.ResetFire != null && this.ResetFire.MarkedForDestruction != true)
+      this.ResetFire.PlayerShoot.CanFire = true;
   }
 }
