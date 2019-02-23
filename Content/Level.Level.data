@@ -77,7 +77,7 @@ Level
 		var Name = "EditorCamera"
 		Transform 
 		{
-			var Translation = Real3{0.284430116, -6.82337332, 24.428051}
+			var Translation = Real3{0.072552532, -5.05742598, 24.428051}
 			var Scale = Real3{1, 1, 1}
 			var Rotation = Quaternion{0, -1.09278471e-08, 0, 1}
 		}
@@ -130,7 +130,7 @@ Level
 			var FarPlane = 500
 			var PerspectiveMode = PerspectiveMode.Orthographic
 			var FieldOfView = 45
-			var Size = 3.23785758
+			var Size = 35.6914635
 		}
 		EditorCameraController 
 		{
@@ -139,7 +139,7 @@ Level
 			var LookDistance = 24.428051
 			var VerticalAngle = 0
 			var HorizontalAngle = 0
-			var LookTarget = Real3{0.284430116, -6.82337332, -7.49280957e-08}
+			var LookTarget = Real3{0.072552532, -5.05742598, -8.41895442e-08}
 			var MoveSensitivity = 1
 		}
 	}
@@ -483,6 +483,23 @@ Level
 			var PixelsPerUnit = 128
 			var TextAlign = TextAlign.Center
 		}
+		BoxCollider 
+		{
+			var Ghost = false
+			var SendsEvents = true
+			var Material = "4de020863e872da8:DefaultPhysicsMaterial"
+			var CollisionGroup = "4e740859314e5515:DefaultGroup"
+			var Offset = Real3{0, -0.215000004, 0}
+			var HalfSize = Real3{1.10000002, 0.300000012, 0.5}
+		}
+		NewGameButton 
+		{
+			var NextLevel = "59097123da28242a:Level"
+		}
+		Reactive 
+		{
+			var Active = true
+		}
 	}
 	Cog [ContextId:14]
 	{
@@ -518,7 +535,7 @@ Level
 		Transform 
 		{
 			var Translation = Real3{0, -7, 0}
-			var Scale = Real3{10, 10, 1}
+			var Scale = Real3{5, 5, 1}
 			var Rotation = Quaternion{0, 0, 0, 1}
 		}
 		Sprite 
@@ -568,7 +585,7 @@ Level
 		Transform 
 		{
 			var Translation = Real3{5, 8.5, 0}
-			var Scale = Real3{10, 10, 1}
+			var Scale = Real3{5, 5, 1}
 			var Rotation = Quaternion{0, 0, 0, 1}
 		}
 		Sprite 
@@ -597,7 +614,7 @@ Level
 		Transform 
 		{
 			var Translation = Real3{7.5, 8.5, 0}
-			var Scale = Real3{10, 10, 1}
+			var Scale = Real3{5, 5, 1}
 			var Rotation = Quaternion{0, 0, 0, 1}
 		}
 		Sprite 
@@ -626,7 +643,7 @@ Level
 		Transform 
 		{
 			var Translation = Real3{10, 8.5, 0}
-			var Scale = Real3{10, 10, 1}
+			var Scale = Real3{5, 5, 1}
 			var Rotation = Quaternion{0, 0, 0, 1}
 		}
 		Sprite 
