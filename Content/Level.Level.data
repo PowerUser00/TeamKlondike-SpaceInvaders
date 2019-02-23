@@ -77,7 +77,7 @@ Level
 		var Name = "EditorCamera"
 		Transform 
 		{
-			var Translation = Real3{0.284430116, -6.82337332, 24.428051}
+			var Translation = Real3{-9.41677475, -9.36023712, 24.428051}
 			var Scale = Real3{1, 1, 1}
 			var Rotation = Quaternion{0, -1.09278471e-08, 0, 1}
 		}
@@ -130,7 +130,7 @@ Level
 			var FarPlane = 500
 			var PerspectiveMode = PerspectiveMode.Orthographic
 			var FieldOfView = 45
-			var Size = 3.23785758
+			var Size = 2.6509347
 		}
 		EditorCameraController 
 		{
@@ -139,7 +139,7 @@ Level
 			var LookDistance = 24.428051
 			var VerticalAngle = 0
 			var HorizontalAngle = 0
-			var LookTarget = Real3{0.284430116, -6.82337332, -7.49280957e-08}
+			var LookTarget = Real3{-9.41677475, -9.36023712, -4.98981194e-07}
 			var MoveSensitivity = 1
 		}
 	}
@@ -482,6 +482,19 @@ Level
 			var FontSize = 128
 			var PixelsPerUnit = 128
 			var TextAlign = TextAlign.Center
+		}
+		NewGameButton 
+		{
+			var NextLevel = "59097123da28242a:Level"
+		}
+		BoxCollider 
+		{
+			var Ghost = false
+			var SendsEvents = true
+			var Material = "4de020863e872da8:DefaultPhysicsMaterial"
+			var CollisionGroup = "4e740859314e5515:DefaultGroup"
+			var Offset = Real3{0, -0.25, 0}
+			var HalfSize = Real3{0.5, 0.25, 0.5}
 		}
 	}
 	Cog [ContextId:14]
