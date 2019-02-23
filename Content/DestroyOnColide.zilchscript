@@ -3,10 +3,12 @@ Blakely North
 10-22-2018
 Destroies the owner on colision.
 ************************************/
-class Destroyoncollide : ZilchComponent
+class DestroyOnCollide : ZilchComponent
 {
   [Property]
   var DeathDelay : Real = 0.05;
+  [Property]
+  var ResetFire : Cog = null;
   
   function Initialize(init : CogInitializer)
   {
@@ -25,6 +27,10 @@ class Destroyoncollide : ZilchComponent
     //////DESTROY
     Actions.Call(seq, this.Owner.Destroy);
     //this.LevelSettings.LevelVars.BlocksLeft -= 1;
-
+  
+  }
+  function Destroyed()
+  {
+    this.ResetFire.PlayerShoot.CanFire = true;
   }
 }
