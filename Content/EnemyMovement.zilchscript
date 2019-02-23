@@ -2,10 +2,26 @@ class EnemyMovement : ZilchComponent
 {
   function Initialize(init : CogInitializer)
   {
-    //Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
   }
 
   function OnLogicUpdate(event : UpdateEvent)
   {
+    //what to adjust the player coordinates by
+    var movement = Real3();
+    
+    //Check for left/right movement
+    if (true)
+    {
+      movement.X = -0.26875;
+    }
+    if (true)
+    {
+      movement.X = 0.26875;
+    }
+    if((Math.Abs(this.Owner.Transform.Translation.X + movement.X)) <= 10.8)
+    {
+      this.Owner.Transform.Translation += movement;
+    }
   }
 }
