@@ -28,7 +28,7 @@ class PlayerMovement : ZilchComponent
     {
       movement.X = 0.26875;
     }
-    if((Math.Abs(this.Owner.Transform.Translation.X + movement.X)) <= 10.8)
+    if((Math.Abs(this.Owner.Transform.Translation.X + movement.X)) <= 11.3)
     {
       this.Owner.Transform.Translation += movement;
     }
