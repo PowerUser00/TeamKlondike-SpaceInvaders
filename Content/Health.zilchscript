@@ -1,58 +1,62 @@
-/************************************
-Blakely North
-10-05-2018
-Add this to things that needs health
-************************************/
+//event to transmit damage and healing
 class HealthChange : ZilchEvent
 {
-  var THATS_A_LOT_OF_DAMAGE = 1;
+  var Damage = 1;
 }
-class Death : ZilchEvent
+//event to trigger other things when an object dies
+class DeathEvent : ZilchEvent
 {
   
 }
 
 class Health : ZilchComponent
 {
-  //this adds the event to the event library(events.something)
+  //this adds the events to the event library(Events.something)
   sends HealthChange : HealthChange;
-  sends DeathEvent : Death;
+  sends DeathEvent : DeathEvent;
   
   [Property]
-  var MaxHP :Integer = 100;
+  var MaxHP : Integer = 100;
   var CurrentHP : Integer = 100;
-  //send death event?
+  
+  //do we want to send a death event?
+  [Property]
   var SendDeathEvent : Boolean = true;
-  //destroy @ 0 hp?
+  //do we want to destroy the owner at 0 hp?
   [Property]
   var DestroyAt0HP : Boolean = true;
+  
   function Initialize(init : CogInitializer)
   {
     this.CurrentHP = this.MaxHP;
     Zero.Connect(this.Owner, Events.HealthChange, this.OnHealthChange);
+    //Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
   }
+
   function OnHealthChange(event : HealthChange)
   {
-    this.CurrentHP -= event.THATS_A_LOT_OF_DAMAGE;
-    //ensure not over max
-    if(this.CurrentHP >= this.MaxHP)
+    this.CurrentHP -= event.Damage;
+    //make sure not over max hp
+    if(this.CurrentHP > this.MaxHP)
     {
-    this.CurrentHP = this.MaxHP;
-  }
-  //check if below
-  if(this.CurrentHP <= 0)
-  {
-    if(this.SendDeathEvent)
-    {
-      //make event to send
-      var deathEvent = Death();
-      //send event
-      this.Owner.DispatchEvent(Events.DeathEvent, deathEvent);
+      this.CurrentHP = this.MaxHP;
     }
-    if(this.DestroyAt0HP)
+    //check if at or below 0 hp
+    if (this.CurrentHP <= 0)
     {
-      this.Owner.Destroy();
+      if(this.SendDeathEvent)
+      {
+        //make event to send
+        var deathEvent = DeathEvent();
+        //send the event
+        this.Owner.DispatchEvent(Events.DeathEvent, deathEvent);
+      }
+      if(this.DestroyAt0HP)
+      {
+        this.Owner.Destroy();
+      }
+      
     }
+    
   }
-}
 }
