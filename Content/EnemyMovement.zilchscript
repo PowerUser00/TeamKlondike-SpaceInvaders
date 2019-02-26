@@ -8,6 +8,8 @@ class EnemyMovement : ZilchComponent
   function OnLogicUpdate(event : UpdateEvent)
   {
     //what to adjust the player coordinates by
+    [Property]
+    var colum : Real = 0;
     var movement = Real3();
     
     //Check for left/right movement
