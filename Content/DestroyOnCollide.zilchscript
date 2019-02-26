@@ -36,3 +36,4 @@ class DestroyOnCollide : ZilchComponent
       this.ResetFire.PlayerShoot.CanFire = true;
   }
 }
+
