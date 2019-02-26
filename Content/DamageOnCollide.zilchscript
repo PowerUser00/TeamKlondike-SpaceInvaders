@@ -1,8 +1,8 @@
 /*
-James Ouyang
-10/5/18
-Add this to objects you wish to damage thigns with Health
-*/
+ *James Ouyang
+ *10/5/18
+ *Add this to objects you wish to damage thigns with Health
+ */
 class DamageOnCollide : ZilchComponent
 {
   [Property]

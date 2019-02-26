@@ -13,7 +13,7 @@ class LevelVars : ZilchComponent
   var FinalTime : Real = 0;
   var Timer : Real = 0;
   /*true = right false = left*/
-var EnemyArray : Array[Integer] {5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5};
+var EnemyArray : Array[Integer] = Array[Integer]{5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5};
   var MovementDir : Boolean = true;
   var CanShootPlayer : Boolean = true;
   var CanShootEnemy : Boolean = true;
