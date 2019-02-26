@@ -4,6 +4,5 @@ class GameVars : ZilchComponent
   var Score : Integer = 0;
   function Initialize(init : CogInitializer)
   {
-    this.Score = 0;
   }
 }
