@@ -12,6 +12,7 @@ class LevelVars : ZilchComponent
   
   var FinalTime : Real = 0;
   var Timer : Real = 0;
+  
   function Initialize(init : CogInitializer)
   {
     Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
