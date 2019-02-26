@@ -36,6 +36,7 @@ GameSession
 	}
 	GameVars 
 	{
-		var Score = 0
+		var Score = 20300
+		var Lives = 5
 	}
 }
