@@ -12,7 +12,6 @@ class DestroyOnCollide : ZilchComponent
   
   function Initialize(init : CogInitializer)
   {
-    
     Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
     
   }
