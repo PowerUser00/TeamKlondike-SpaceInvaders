@@ -473,7 +473,7 @@ Level
 		var Name = "LivesText"
 		Transform 
 		{
-			var Translation = Real3{1.75, 8.75, 0}
+			var Translation = Real3{2.75, 8.75, 0}
 			var Scale = Real3{1, 1, 1}
 			var Rotation = Quaternion{0, 0, 0, 1}
 		}
@@ -624,7 +624,7 @@ Level
 		var Name = "Player"
 		Transform 
 		{
-			var Translation = Real3{5, 8.5, 0}
+			var Translation = Real3{6, 8.5, 0}
 			var Scale = Real3{5, 5, 1}
 			var Rotation = Quaternion{0, 0, 0, 1}
 		}
@@ -682,7 +682,7 @@ Level
 		var Name = "Player"
 		Transform 
 		{
-			var Translation = Real3{10, 8.5, 0}
+			var Translation = Real3{9, 8.5, 0}
 			var Scale = Real3{5, 5, 1}
 			var Rotation = Quaternion{0, 0, 0, 1}
 		}
@@ -706,7 +706,36 @@ Level
 			var StartFrame = 0
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:19]
+	Cog [ContextId:19]
+	{
+		var Name = "Player"
+		Transform 
+		{
+			var Translation = Real3{10.5, 8.5, 0}
+			var Scale = Real3{5, 5, 1}
+			var Rotation = Quaternion{0, 0, 0, 1}
+		}
+		Sprite 
+		{
+			var Visible = true
+			var ViewCulling = true
+			var VisibilityEvents = true
+			var OverrideBoundingBox = false
+			var LocalAabbCenter = Real3{0, 0, 0}
+			var LocalAabbHalfExtents = Real3{1, 1, 1}
+			var GroupSortValue = 0
+			var Material = "582c575af53d18c9:AlphaSprite"
+			var VertexColor = Real4{0, 1, 0, 1}
+			var GeometryMode = SpriteGeometryMode.ZPlane
+			var SpriteSource = "5cc77bb3dd50d877:laser_canon"
+			var FlipX = false
+			var FlipY = false
+			var AnimationActive = true
+			var AnimationSpeed = 1
+			var StartFrame = 0
+		}
+	}
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:20]
 	{
 		Transform 
 		{
@@ -715,7 +744,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:20]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:21]
 	{
 		Transform 
 		{
@@ -724,7 +753,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:21]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:22]
 	{
 		Transform 
 		{
@@ -733,7 +762,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:22]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:23]
 	{
 		Transform 
 		{
@@ -742,7 +771,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:23]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:24]
 	{
 		Transform 
 		{
@@ -751,7 +780,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:24]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:25]
 	{
 		Transform 
 		{
@@ -760,7 +789,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:25]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:26]
 	{
 		Transform 
 		{
@@ -769,7 +798,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:26]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:27]
 	{
 		Transform 
 		{
@@ -778,7 +807,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:27]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:28]
 	{
 		Transform 
 		{
@@ -787,7 +816,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:28]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:29]
 	{
 		Transform 
 		{
@@ -796,7 +825,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:29]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:30]
 	{
 		Transform 
 		{
@@ -805,7 +834,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:30]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:31]
 	{
 		Transform 
 		{
@@ -814,7 +843,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:31]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:32]
 	{
 		Transform 
 		{
@@ -823,7 +852,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:32]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:33]
 	{
 		Transform 
 		{
@@ -832,7 +861,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:33]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:34]
 	{
 		Transform 
 		{
@@ -841,7 +870,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:34]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:35]
 	{
 		Transform 
 		{
@@ -850,7 +879,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:35]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:36]
 	{
 		Transform 
 		{
@@ -859,7 +888,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:36]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:37]
 	{
 		Transform 
 		{
@@ -868,7 +897,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:37]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:38]
 	{
 		Transform 
 		{
@@ -877,7 +906,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:38]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:39]
 	{
 		Transform 
 		{
@@ -886,7 +915,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:39]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:40]
 	{
 		Transform 
 		{
@@ -895,7 +924,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:40]
+	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:41]
 	{
 		Transform 
 		{
@@ -904,7 +933,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:41]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:42]
 	{
 		Transform 
 		{
@@ -913,7 +942,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:42]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:43]
 	{
 		Transform 
 		{
@@ -922,7 +951,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:43]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:44]
 	{
 		Transform 
 		{
@@ -931,7 +960,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:44]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:45]
 	{
 		Transform 
 		{
@@ -940,7 +969,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:45]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:46]
 	{
 		Transform 
 		{
@@ -949,7 +978,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:46]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:47]
 	{
 		Transform 
 		{
@@ -958,7 +987,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:47]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:48]
 	{
 		Transform 
 		{
@@ -967,7 +996,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:48]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:49]
 	{
 		Transform 
 		{
@@ -976,7 +1005,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:49]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:50]
 	{
 		Transform 
 		{
@@ -985,7 +1014,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:50]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:51]
 	{
 		Transform 
 		{
@@ -994,7 +1023,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:51]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:52]
 	{
 		Transform 
 		{
@@ -1003,7 +1032,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:52]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:53]
 	{
 		Transform 
 		{
@@ -1012,7 +1041,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:53]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:54]
 	{
 		Transform 
 		{
@@ -1021,7 +1050,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:54]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:55]
 	{
 		Transform 
 		{
@@ -1030,7 +1059,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:55]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:56]
 	{
 		Transform 
 		{
@@ -1039,7 +1068,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:56]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:57]
 	{
 		Transform 
 		{
@@ -1048,7 +1077,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:57]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:58]
 	{
 		Transform 
 		{
@@ -1057,7 +1086,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:58]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:59]
 	{
 		Transform 
 		{
@@ -1066,7 +1095,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:59]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:60]
 	{
 		Transform 
 		{
@@ -1075,7 +1104,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:60]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:61]
 	{
 		Transform 
 		{
@@ -1084,7 +1113,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:61]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:62]
 	{
 		Transform 
 		{
@@ -1093,7 +1122,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:62]
+	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:63]
 	{
 		Transform 
 		{
@@ -1102,7 +1131,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:63]
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:64]
 	{
 		Transform 
 		{
@@ -1111,7 +1140,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:64]
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:65]
 	{
 		Transform 
 		{
@@ -1120,7 +1149,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:65]
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:66]
 	{
 		Transform 
 		{
@@ -1129,7 +1158,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:66]
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:67]
 	{
 		Transform 
 		{
@@ -1138,7 +1167,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:67]
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:68]
 	{
 		Transform 
 		{
@@ -1147,7 +1176,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:68]
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:69]
 	{
 		Transform 
 		{
@@ -1156,7 +1185,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:69]
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:70]
 	{
 		Transform 
 		{
@@ -1165,7 +1194,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:70]
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:71]
 	{
 		Transform 
 		{
@@ -1174,7 +1203,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:71]
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:72]
 	{
 		Transform 
 		{
@@ -1183,7 +1212,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:72]
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:73]
 	{
 		Transform 
 		{
@@ -1192,7 +1221,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:73]
+	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:74]
 	{
 		Transform 
 		{
@@ -1201,7 +1230,7 @@ Level
 			var Scale = Real3{5, 5, 1.00000012}
 		}
 	}
-	Cog [InheritId:"5caa7a33472a4ebf:LaserStraight"][ContextId:74]
+	Cog [InheritId:"5caa7a33472a4ebf:LaserStraight"][ContextId:75]
 	{
 		Transform 
 		{
