@@ -4,7 +4,7 @@ Cog
 	var Name = "Octopus"
 	Transform 
 	{
-		var Translation = Real3{-4.76837158e-07, -1.75000024, 0}
+		var Translation = Real3{-1.75000048, -1.75000024, 0}
 		var Scale = Real3{5, 5, 1.00000012}
 		var Rotation = Quaternion{0, 0, 0, 1}
 	}
@@ -41,5 +41,9 @@ Cog
 		var MaxHP = 100
 		var SendDeathEvent = true
 		var DestroyAt0HP = true
+	}
+	PointsOnDestruction 
+	{
+		var Points = 100
 	}
 }
