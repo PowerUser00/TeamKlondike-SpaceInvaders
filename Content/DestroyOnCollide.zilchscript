@@ -12,7 +12,6 @@ class DestroyOnCollide : ZilchComponent
   
   function Initialize(init : CogInitializer)
   {
-    
     Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
     
   }
@@ -36,3 +35,4 @@ class DestroyOnCollide : ZilchComponent
       this.ResetFire.PlayerShoot.CanFire = true;
   }
 }
+
