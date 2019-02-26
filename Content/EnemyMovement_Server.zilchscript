@@ -2,10 +2,15 @@ class EnemyMovement_Server : ZilchComponent
 {
   function Initialize(init : CogInitializer)
   {
-    //Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
   }
 
   function OnLogicUpdate(event : UpdateEvent)
   {
+    var i : Real = 0;
+    for(i = 0; i < 11; ++i)
+    {
+     // if(this.Space.LevelVars.)
+    }
   }
 }
