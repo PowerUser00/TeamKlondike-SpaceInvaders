@@ -13,8 +13,11 @@ class LevelVars : ZilchComponent
   var FinalTime : Real = 0;
   var Timer : Real = 0;
   /*true = right false = left*/
-var EnemyArray : Array[Integer] = Array[Integer](){5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5};
-  var MovementDir : Boolean = true;
+var EnemyArray : Array[Boolean] = Array[Boolean](55,true);
+    var Y : Real = 0;
+    var X : Real = 0;
+
+  var MovementAmnt : Integer = 1;
   var CanShootPlayer : Boolean = true;
   var CanShootEnemy : Boolean = true;
   function Initialize(init : CogInitializer)
