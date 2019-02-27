@@ -9,7 +9,7 @@ class LevelVars : ZilchComponent
   var BlocksLeft : Integer = 36;
   [Property]
   var NextLevel : Level = null;
-  
+  var EnemyOffset : Real3 = Real3(0, 1, 0);  
   var FinalTime : Real = 0;
   var Timer : Real = 0;
   /*true = right false = left*/
