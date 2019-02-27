@@ -4,7 +4,7 @@ Cog
 	var Name = "Octopus"
 	Transform 
 	{
-		var Translation = Real3{-1.75000048, -1.75000024, 0}
+		var Translation = Real3{-6.25, 2.74999976, 0}
 		var Scale = Real3{5, 5, 1.00000012}
 		var Rotation = Quaternion{0, 0, 0, 1}
 	}
@@ -34,7 +34,7 @@ Cog
 		var Material = "4de020863e872da8:DefaultPhysicsMaterial"
 		var CollisionGroup = "4e740859314e5515:DefaultGroup"
 		var Offset = Real3{0, 0, 0}
-		var HalfSize = Real3{0.0900000036, 0.0649999976, 0.5}
+		var HalfSize = Real3{0.0939999968, 0.0649999976, 0.5}
 	}
 	Health 
 	{
@@ -44,6 +44,6 @@ Cog
 	}
 	PointsOnDestruction 
 	{
-		var Points = 100
+		var Points = 10
 	}
 }
