@@ -4,7 +4,7 @@ Cog
 	var Name = "Squid"
 	Transform 
 	{
-		var Translation = Real3{-8.75, 4.25, 0}
+		var Translation = Real3{-6.25, 5.75, 0}
 		var Scale = Real3{5, 5, 1.00000012}
 		var Rotation = Quaternion{0, 0, 0, 1}
 	}
@@ -26,5 +26,24 @@ Cog
 		var AnimationActive = true
 		var AnimationSpeed = 1
 		var StartFrame = 0
+	}
+	BoxCollider 
+	{
+		var Ghost = false
+		var SendsEvents = true
+		var Material = "4de020863e872da8:DefaultPhysicsMaterial"
+		var CollisionGroup = "4e740859314e5515:DefaultGroup"
+		var Offset = Real3{0.00800000038, 0, 0}
+		var HalfSize = Real3{0.0860000029, 0.0625, 0.5}
+	}
+	Health 
+	{
+		var MaxHP = 100
+		var SendDeathEvent = true
+		var DestroyAt0HP = true
+	}
+	PointsOnDestruction 
+	{
+		var Points = 30
 	}
 }
