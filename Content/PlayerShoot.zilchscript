@@ -18,9 +18,8 @@ This will fire all the cannons
   function Initialize(init : CogInitializer)
   {
     Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
-    
-  
   }
+  
   //function to fire a projectile in the chosen direction
   function Fire(direction : Real3)
   {
