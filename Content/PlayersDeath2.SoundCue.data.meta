@@ -1,0 +1,11 @@
+[Version:1]
+DataContent 
+{
+	DataBuilder 
+	{
+		var Name = "PlayersDeath2"
+		var ResourceId = 0x5caf0824eac911af
+		var LoaderType = "SoundCue"
+		var Version = 0
+	}
+}

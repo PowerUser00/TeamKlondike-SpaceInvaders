@@ -1,0 +1,11 @@
+[Version:1]
+DataContent 
+{
+	DataBuilder 
+	{
+		var Name = "Highmid"
+		var ResourceId = 0x5caf09b6c0e04704
+		var LoaderType = "SoundCue"
+		var Version = 0
+	}
+}
