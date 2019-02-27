@@ -3,8 +3,8 @@ DataContent
 {
 	DataBuilder 
 	{
-		var Name = "MainMenu"
-		var ResourceId = 0x5cea1338eceb3ed3
+		var Name = "GameOver"
+		var ResourceId = 0x5caf27dbb4f2e03e
 		var LoaderType = "Level"
 		var Version = 0
 	}

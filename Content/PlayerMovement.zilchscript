@@ -22,11 +22,11 @@ class PlayerMovement : ZilchComponent
     //Check for left/right movement
     if (Zero.Keyboard.KeyIsDown(this.LeftKey))
     {
-      movement.X = -0.26875;
+      movement.X = -0.134375;
     }
     if (Zero.Keyboard.KeyIsDown(this.RightKey))
     {
-      movement.X = 0.26875;
+      movement.X = 0.134375;
     }
     if((Math.Abs(this.Owner.Transform.Translation.X + movement.X)) <= 11.3)
     {

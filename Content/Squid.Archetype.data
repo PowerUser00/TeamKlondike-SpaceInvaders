@@ -4,7 +4,7 @@ Cog
 	var Name = "Squid"
 	Transform 
 	{
-		var Translation = Real3{-6.25, 5.75, 0}
+		var Translation = Real3{-1.25000048, 5.75, 0}
 		var Scale = Real3{5, 5, 1.00000012}
 		var Rotation = Quaternion{0, 0, 0, 1}
 	}
@@ -45,5 +45,12 @@ Cog
 	PointsOnDestruction 
 	{
 		var Points = 30
+	}
+	AlienShooting 
+	{
+		var Projectile = "5caa7a33472a4ebf:LaserStraight"
+		var ProjSpeed = 20
+		var CanFire = true
+		var FireOffset = Real3{0, -1, 0}
 	}
 }

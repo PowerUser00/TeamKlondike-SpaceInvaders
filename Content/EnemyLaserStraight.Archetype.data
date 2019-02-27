@@ -1,11 +1,11 @@
 [Version:1]
 Cog 
 {
-	var Name = "Crab"
+	var Name = "EnemyLaserStraight"
 	Transform 
 	{
-		var Translation = Real3{-6.25, 4.75, 0}
-		var Scale = Real3{5, 5, 1.00000012}
+		var Translation = Real3{19.3750057, -2.92039037, 5.60986393e-07}
+		var Scale = Real3{5, 5, 1}
 		var Rotation = Quaternion{0, 0, 0, 1}
 	}
 	Sprite 
@@ -20,12 +20,22 @@ Cog
 		var Material = "582c575af53d18c9:AlphaSprite"
 		var VertexColor = Real4{1, 1, 1, 1}
 		var GeometryMode = SpriteGeometryMode.ZPlane
-		var SpriteSource = "5cc77bb3dd5f24ea:large_invader"
+		var SpriteSource = "5cc77bb3dd501751:laser"
 		var FlipX = false
 		var FlipY = false
 		var AnimationActive = true
 		var AnimationSpeed = 1
 		var StartFrame = 0
+	}
+	RigidBody 
+	{
+		var Velocity = Real3{0, 0, 0}
+		var AngularVelocity = Real3{0, 0, 0}
+		var DynamicState = RigidBodyDynamicState.Dynamic
+		var AllowSleep = true
+		var Asleep = false
+		var RotationLocked = false
+		var Mode2D = Mode2DStates.InheritFromSpace
 	}
 	BoxCollider 
 	{
@@ -33,24 +43,11 @@ Cog
 		var SendsEvents = true
 		var Material = "4de020863e872da8:DefaultPhysicsMaterial"
 		var CollisionGroup = "4e740859314e5515:DefaultGroup"
-		var Offset = Real3{0, 0, 0}
-		var HalfSize = Real3{0.0939999968, 0.0649999976, 0.5}
+		var Offset = Real3{0.00781999994, 0, 0}
+		var HalfSize = Real3{0.00779999979, 0.03125, 0.5}
 	}
-	PointsOnDestruction 
+	DestroyOnCollideENEMY 
 	{
-		var Points = 20
-	}
-	Health 
-	{
-		var MaxHP = 100
-		var SendDeathEvent = true
-		var DestroyAt0HP = true
-	}
-	AlienShooting 
-	{
-		var Projectile = "null"
-		var ProjSpeed = 20
-		var CanFire = true
-		var FireOffset = Real3{0, -1, 0}
+		var DeathDelay = 0.0500000007
 	}
 }

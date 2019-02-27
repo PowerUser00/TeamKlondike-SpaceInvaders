@@ -17,5 +17,6 @@ class PointsOnDestruction : ZilchComponent
   {
       this.GameSession.GameVars.Score += this.Points;
       this.Space.DispatchEvent("ScoreUpdate",ZilchEvent());
+      
   }
 }
