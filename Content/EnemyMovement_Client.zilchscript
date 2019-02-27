@@ -11,7 +11,8 @@ class EnemyMovement : ZilchComponent
     [Property]
     var colum : Real = 0;
     
-    //Check for left/right movement
+    //Move
+    
 /*
     if (true)
     {
