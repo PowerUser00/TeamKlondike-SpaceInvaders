@@ -14,8 +14,6 @@ class LevelVars : ZilchComponent
   var Timer : Real = 0;
   /*true = right false = left*/
 var EnemyArray : Array[Boolean] = Array[Boolean](55,true);
-    var Y : Real = 0;
-    var X : Real = 0;
 
   var MovementAmnt : Integer = 1;
   var CanShootPlayer : Boolean = true;
@@ -32,6 +30,8 @@ var EnemyArray : Array[Boolean] = Array[Boolean](55,true);
       this.Space.LoadLevel(this.NextLevel);
     }
     this.Timer += event.Dt;
+    
+    
     
     if(this.BlocksLeft <= 0)
     {
