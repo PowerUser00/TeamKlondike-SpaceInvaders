@@ -5,17 +5,26 @@ class EnemyMovement : ZilchComponent
     Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
     Zero.Connect(this.Space, "MoveRight", this.OnMoveRight);
     Zero.Connect(this.Space, "MoveDown", this.OnMoveDown);
+    Zero.Connect(this.Space, "MoveLeft", this.OnMoveLeft);
+  }
+
+  function OnMoveLeft(event : Event)
+  {
+    this.Owner.Transform.Translation += Real3(-0.25,0,0);
+    if(this.Owner.Transform.Translation.X > -10.75)
+      this.LevelSettings.EnemyMovement_Server.Direction = 0;
+
   }
 
   function OnMoveDown(event : Event)
   {
-    this.Owner.Transform.Translation += Real3(0,-1,0);
+    this.Owner.Transform.Translation += Real3(0,-0.25,0);
   }
 
   function OnMoveRight(event : Event)
   {
-    this.Owner.Transform.Translation += Real3(1,0,0);
-    if(this.Owner.Transform.Translation.X > 10)
+    this.Owner.Transform.Translation += Real3(0.25,0,0);
+    if(this.Owner.Transform.Translation.X > 10.75)
       this.LevelSettings.EnemyMovement_Server.Direction = 0;
   }
 

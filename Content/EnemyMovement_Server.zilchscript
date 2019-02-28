@@ -1,6 +1,6 @@
 class EnemyMovement_Server : ZilchComponent
 {
-  //0 is down 1 is right 2 is left 
+  //0 is down 1 is right -1 is left 
   var Direction : Integer = 1;
   var PreviosDirection = 1;
   
@@ -26,10 +26,10 @@ class EnemyMovement_Server : ZilchComponent
         this.Space.DispatchEvent("MoveDown", ZilchEvent());
         if(this.PreviosDirection == 1)
         { 
-          this.PreviosDirection = 2;
-          this.Direction = 2;
+          this.PreviosDirection = -1;
+          this.Direction = -1;
         }
-        else if(this.PreviosDirection == 2)
+        else if(this.PreviosDirection == -1)
         { 
           this.PreviosDirection = 1;
           this.Direction = 1;
@@ -38,10 +38,32 @@ class EnemyMovement_Server : ZilchComponent
       else if(this.Direction == 1)
       {
         this.Space.DispatchEvent("MoveRight", ZilchEvent());
+        if(this.PreviosDirection == 1)
+        { 
+          this.PreviosDirection = -1;
+          this.Direction = -1;
+        }
+        else if(this.PreviosDirection == -1)
+        { 
+          this.PreviosDirection = 1;
+          this.Direction = 1;
+        }
+
       }
-      else if(this.Direction == 2)
+      else if(this.Direction == -1)
       {
         this.Space.DispatchEvent("MoveLeftt", ZilchEvent());
+        if(this.PreviosDirection == -1)
+        { 
+          this.PreviosDirection = -1;
+          this.Direction = -1;
+        }
+        else if(this.PreviosDirection == -1)
+        { 
+          this.PreviosDirection = 1;
+          this.Direction = 1;
+        }
+
       }
       
       
