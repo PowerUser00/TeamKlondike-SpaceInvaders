@@ -6,7 +6,7 @@ Destroies the owner on colision.
 class DestroyOnCollide : ZilchComponent
 {
   [Property]
-  var DeathDelay : Real = 0.05;
+  var DeathDelay : Real = 0;
   [Property]
   var ResetFire : Cog = null;
   
