@@ -11,11 +11,11 @@ class ScoreText : ZilchComponent
   function Initialize(init : CogInitializer)
   {
     Zero.Connect(this.Space, "ScoreUpdate", this.OnScoreUpdate);
-    this.SpriteText.Text = "`this.Space.LevelSettings.LevelVars.Score`";
+    this.SpriteText.Text = "`this.Space.GameSession.GameVars.Score`";
   }
 
   function OnScoreUpdate(event : Event)
   {
-    this.SpriteText.Text = "`this.GameSession.LevelVars.Score`";
+    this.SpriteText.Text = "`this.GameSession.GameVars.Score`";
   }
 }

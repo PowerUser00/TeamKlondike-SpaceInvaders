@@ -30,10 +30,10 @@ class DestroyOnCollideENEMY : ZilchComponent
   {
     if(this.ResetFire != null && this.ResetFire.MarkedForDestruction != true)
     {
-      if(this.GameSession.LevelVars.Lives > 1)
+      if(this.GameSession.GameVars.Lives > 1)
       {
         this.Owner.Transform.Translation = Real3(0, -7, 0);
-        this.GameSession.LevelVars.Lives -= 1;
+        this.GameSession.GameVars.Lives -= 1;
       }
       if(this.Owner != null && this.NextLevel != null)
       this.ResetFire.AlienShooting.CanFire = true;

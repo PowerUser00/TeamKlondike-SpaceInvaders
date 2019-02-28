@@ -19,7 +19,8 @@ class LifeCounter : ZilchComponent
   }
   function LifeVisibility()
   {
-    if(this.Space.LevelSettings.LevelVars.Lives >= this.LifeThreshold)
+    Console.WriteLine(this.GameSession.GameVars);
+    if(this.GameSession.GameVars.Lives >= this.LifeThreshold)
     {
       this.Owner.Sprite.Visible = true;
     }

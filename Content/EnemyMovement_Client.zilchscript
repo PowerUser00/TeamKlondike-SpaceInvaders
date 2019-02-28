@@ -10,9 +10,9 @@ class EnemyMovement : ZilchComponent
     //what to adjust the player coordinates by
     [Property]
     var colum : Real = 0;
-    
+    var ogPos : Real3 = Real3(0, 0, 0);
     //Move
-    
+    //this.Space.LevelSettings.LevelVars.MovementAmnt.X = this.Space.
 /*
     if (true)
     {
