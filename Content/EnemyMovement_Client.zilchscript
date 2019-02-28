@@ -3,6 +3,20 @@ class EnemyMovement : ZilchComponent
   function Initialize(init : CogInitializer)
   {
     Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    Zero.Connect(this.Space, "MoveRight", this.OnMoveRight);
+    Zero.Connect(this.Space, "MoveDown", this.OnMoveDown);
+  }
+
+  function OnMoveDown(event : Event)
+  {
+    this.Owner.Transform.Translation += Real3(0,-1,0);
+  }
+
+  function OnMoveRight(event : Event)
+  {
+    this.Owner.Transform.Translation += Real3(1,0,0);
+    if(this.Owner.Transform.Translation.X > 10)
+      this.LevelSettings.EnemyMovement_Server.Direction = 0;
   }
 
   function OnLogicUpdate(event : UpdateEvent)

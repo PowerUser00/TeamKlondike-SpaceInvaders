@@ -45,6 +45,10 @@ Level
 			var BlocksLeft = 36
 			var NextLevel = "5caf27dbb4f2e03e:GameOver"
 		}
+		EnemyMovement_Server 
+		{
+			var MoveTime = 1
+		}
 	}
 	Cog [ContextId:2]
 	{
@@ -84,7 +88,7 @@ Level
 		var Name = "EditorCamera"
 		Transform 
 		{
-			var Translation = Real3{1.81229234, 3.52680612, 24.428051}
+			var Translation = Real3{5.45073843, 0.656078756, 24.428051}
 			var Scale = Real3{1, 1, 1}
 			var Rotation = Quaternion{0, -1.09278471e-08, 0, 1}
 		}
@@ -137,7 +141,7 @@ Level
 			var FarPlane = 500
 			var PerspectiveMode = PerspectiveMode.Orthographic
 			var FieldOfView = 45
-			var Size = 14.1572428
+			var Size = 28.5091877
 		}
 		EditorCameraController 
 		{
@@ -146,7 +150,7 @@ Level
 			var LookDistance = 24.428051
 			var VerticalAngle = 0
 			var HorizontalAngle = 0
-			var LookTarget = Real3{1.81229234, 3.52680612, 2.76232299e-07}
+			var LookTarget = Real3{5.45073843, 0.656078756, -2.97205219e-07}
 			var MoveSensitivity = 1
 		}
 	}
@@ -720,6 +724,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -731,6 +738,9 @@ Level
 			var Translation = Real3{3.75, 3.5, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -744,6 +754,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -755,6 +768,9 @@ Level
 			var Translation = Real3{-3.75, 3.5, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -768,6 +784,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -779,6 +798,9 @@ Level
 			var Translation = Real3{1.24999952, 3.5, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -792,6 +814,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -803,6 +828,9 @@ Level
 			var Translation = Real3{5, 3.5, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -816,6 +844,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -827,6 +858,9 @@ Level
 			var Translation = Real3{-2.5, 3.5, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -840,6 +874,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -851,6 +888,9 @@ Level
 			var Translation = Real3{-6.25, 2.49999976, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -864,6 +904,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -875,6 +918,9 @@ Level
 			var Translation = Real3{-1.25000048, 2.49999976, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -888,6 +934,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -899,6 +948,9 @@ Level
 			var Translation = Real3{6.25, 2.49999976, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -912,6 +964,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -923,6 +978,9 @@ Level
 			var Translation = Real3{-5, 2.49999976, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -936,6 +994,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -947,6 +1008,9 @@ Level
 			var Translation = Real3{-4.76837158e-07, 2.49999976, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -960,6 +1024,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -971,6 +1038,9 @@ Level
 			var Translation = Real3{2.49999952, 2.49999976, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -984,6 +1054,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -995,6 +1068,9 @@ Level
 			var Translation = Real3{3.75, 1.49999976, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1008,6 +1084,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1019,6 +1098,9 @@ Level
 			var Translation = Real3{-3.75, 1.49999976, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1032,6 +1114,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1043,6 +1128,9 @@ Level
 			var Translation = Real3{1.24999952, 1.49999976, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1056,6 +1144,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1067,6 +1158,9 @@ Level
 			var Translation = Real3{5, 1.49999976, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1080,6 +1174,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1092,6 +1189,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1103,6 +1203,9 @@ Level
 			var Translation = Real3{2.49999952, 1.49999976, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1121,6 +1224,9 @@ Level
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
 			var ProjSpeed = 15
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:55]
 	{
@@ -1134,6 +1240,9 @@ Level
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
 			var ProjSpeed = 15
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:56]
@@ -1149,6 +1258,9 @@ Level
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
 			var ProjSpeed = 15
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:57]
 	{
@@ -1157,6 +1269,9 @@ Level
 			var Translation = Real3{-3.75, 0.499999762, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:58]
@@ -1172,6 +1287,9 @@ Level
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
 			var ProjSpeed = 15
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:59]
 	{
@@ -1185,6 +1303,9 @@ Level
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
 			var ProjSpeed = 15
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:60]
@@ -1200,6 +1321,9 @@ Level
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
 			var ProjSpeed = 15
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:61]
 	{
@@ -1213,6 +1337,9 @@ Level
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
 			var ProjSpeed = 15
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:62]
@@ -1228,6 +1355,9 @@ Level
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
 			var ProjSpeed = 15
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:63]
 	{
@@ -1241,6 +1371,9 @@ Level
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
 			var ProjSpeed = 15
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:64]
@@ -1256,6 +1389,9 @@ Level
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
 			var ProjSpeed = 15
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 	}
 	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:65]
 	{
@@ -1264,6 +1400,9 @@ Level
 			var Translation = Real3{-6.25, 4.5, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1277,6 +1416,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1288,6 +1430,9 @@ Level
 			var Translation = Real3{-1.25000048, 4.5, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1301,6 +1446,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1312,6 +1460,9 @@ Level
 			var Translation = Real3{6.25, 4.5, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1325,6 +1476,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1336,6 +1490,9 @@ Level
 			var Translation = Real3{-5, 4.5, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1349,6 +1506,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1360,6 +1520,9 @@ Level
 			var Translation = Real3{-4.76837158e-07, 4.5, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1373,6 +1536,9 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
+		EnemyMovement [LocallyAdded]
+		{
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1384,6 +1550,9 @@ Level
 			var Translation = Real3{2.49999952, 4.5, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
+		}
+		EnemyMovement [LocallyAdded]
+		{
 		}
 		AlienShooting [LocallyRemoved]
 		{
