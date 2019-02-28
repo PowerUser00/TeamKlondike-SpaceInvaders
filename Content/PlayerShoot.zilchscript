@@ -14,6 +14,9 @@ This will fire all the cannons
   var CanFire : Boolean = true;
   [Property]
   var FireOffset : Real3 = Real3(0, 1, 0);
+  //The sound the player will make when they fire
+  [Property]
+  var FireSound : SoundCue = null;
   
   function Initialize(init : CogInitializer)
   {
@@ -37,6 +40,7 @@ This will fire all the cannons
     if (Zero.Keyboard.KeyIsDown(Keys.Space) && this.CanFire == true)
     {
       this.Fire(Real3(0, 1, 0));
+      this.Space.SoundSpace.PlayCue(this.FireSound);
     }
   }
 }
