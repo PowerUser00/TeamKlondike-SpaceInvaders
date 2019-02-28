@@ -6,6 +6,10 @@ A set of universal vars.
 class LevelVars : ZilchComponent
 {
   [Property]
+  var Score : Integer = 0;
+  [Property]
+  var Lives : Integer = 3;
+  [Property]
   var BlocksLeft : Integer = 36;
   [Property]
   var NextLevel : Level = null;
@@ -20,7 +24,7 @@ class LevelVars : ZilchComponent
   var CanShootEnemy : Boolean = true;
   function Initialize(init : CogInitializer)
   {
-    Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    //Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
   }
 
   function OnLogicUpdate(event : UpdateEvent)

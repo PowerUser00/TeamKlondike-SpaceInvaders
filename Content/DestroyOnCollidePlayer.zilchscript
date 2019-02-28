@@ -15,10 +15,7 @@ class DestroyOnCollideENEMY : ZilchComponent
   function Initialize(init : CogInitializer)
   {
     Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
-    
   }
-
-
   function OnCollisionStarted(event : CollisionEvent)
   {
     //set up action sequence
@@ -28,17 +25,19 @@ class DestroyOnCollideENEMY : ZilchComponent
     //////DESTROY
     Actions.Call(seq, this.Owner.Destroy);
     //this.LevelSettings.LevelVars.BlocksLeft -= 1;
-  
   }
     function Destroyed()
   {
-    
     if(this.ResetFire != null && this.ResetFire.MarkedForDestruction != true)
-      if(this.Owner != null)
-        this.ResetFire.AlienShooting.CanFire = true;
-        this.Space.LoadLevel(this.NextLevel);
-
+    {
+      if(this.GameSession.LevelVars.Lives > 1)
+      {
+        this.Owner.Transform.Translation = Real3(0, -7, 0);
+        this.GameSession.LevelVars.Lives -= 1;
+      }
+      if(this.Owner != null && this.NextLevel != null)
+      this.ResetFire.AlienShooting.CanFire = true;
+      this.Space.LoadLevel(this.NextLevel);
+    }
   }
-
 }
-

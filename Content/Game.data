@@ -34,9 +34,11 @@ GameSession
 		var BasicHostInfoTimeout = 3
 		var ExtraHostInfoTimeout = 4
 	}
-	GameVars 
+	LevelVars 
 	{
-		var Score = 0
-		var Lives = 7
+		var Score = 10
+		var Lives = 3
+		var BlocksLeft = 36
+		var NextLevel = "null"
 	}
 }

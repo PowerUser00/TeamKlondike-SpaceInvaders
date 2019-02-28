@@ -38,6 +38,13 @@ Level
 			var HighlightInterval = 10
 			var FollowEditorCamera = false
 		}
+		LevelVars 
+		{
+			var Score = 0
+			var Lives = 3
+			var BlocksLeft = 36
+			var NextLevel = "5caf27dbb4f2e03e:GameOver"
+		}
 	}
 	Cog [ContextId:2]
 	{
@@ -77,7 +84,7 @@ Level
 		var Name = "EditorCamera"
 		Transform 
 		{
-			var Translation = Real3{3.58185887, -0.404141337, 24.428051}
+			var Translation = Real3{1.81229234, 3.52680612, 24.428051}
 			var Scale = Real3{1, 1, 1}
 			var Rotation = Quaternion{0, -1.09278471e-08, 0, 1}
 		}
@@ -130,7 +137,7 @@ Level
 			var FarPlane = 500
 			var PerspectiveMode = PerspectiveMode.Orthographic
 			var FieldOfView = 45
-			var Size = 23.3413143
+			var Size = 14.1572428
 		}
 		EditorCameraController 
 		{
@@ -139,7 +146,7 @@ Level
 			var LookDistance = 24.428051
 			var VerticalAngle = 0
 			var HorizontalAngle = 0
-			var LookTarget = Real3{3.58185887, -0.404141337, 3.5358255e-07}
+			var LookTarget = Real3{1.81229234, 3.52680612, 2.76232299e-07}
 			var MoveSensitivity = 1
 		}
 	}
@@ -637,6 +644,7 @@ Level
 			var ProjSpeed = 15
 			var CanFire = true
 			var FireOffset = Real3{0, 0.5, 0}
+			var FireSound = "5caf0817d7ec3e78:EnemyFire"
 		}
 		PointsOnDestruction 
 		{
@@ -1149,11 +1157,6 @@ Level
 			var Translation = Real3{-3.75, 0.499999762, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
-		}
-		AlienShooting 
-		{
-			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 15
 		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:58]
