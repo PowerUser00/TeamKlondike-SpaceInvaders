@@ -4,7 +4,7 @@ Cog
 	var Name = "Octopus"
 	Transform 
 	{
-		var Translation = Real3{-4.76837158e-07, 0.499999762, 0}
+		var Translation = Real3{-3.75, 0.499999762, 0}
 		var Scale = Real3{5, 5, 1.00000012}
 		var Rotation = Quaternion{0, 0, 0, 1}
 	}

@@ -4,7 +4,7 @@ Cog
 	var Name = "LaserStraight"
 	Transform 
 	{
-		var Translation = Real3{-12.3519497, 10.5246525, 5.60986393e-07}
+		var Translation = Real3{15.6250057, -2.92039037, 5.60986393e-07}
 		var Scale = Real3{5, 5, 1}
 		var Rotation = Quaternion{0, 0, 0, 1}
 	}
