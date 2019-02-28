@@ -51,9 +51,4 @@ Cog
 		var Damage = 100
 		var Cooldown = 0.5
 	}
-	DestroyOnCollideENEMY 
-	{
-		var DeathDelay = 0
-		var NextLevel = "null"
-	}
 }
