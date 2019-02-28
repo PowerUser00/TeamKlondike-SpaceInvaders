@@ -15,7 +15,7 @@ class PointsOnDestruction : ZilchComponent
   
   function Destroyed()
   {
-      this.GameSession.GameVars.Score += this.Points;
+      this.GameSession.LevelVars.Score += this.Points;
       this.Space.DispatchEvent("ScoreUpdate",ZilchEvent());
       
   }
