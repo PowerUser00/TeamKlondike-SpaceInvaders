@@ -28,9 +28,6 @@ class DamageOnCollide : ZilchComponent
       event.OtherObject.DispatchEvent(Events.HealthChange, damageEvent);
     }
   }    
-    
-  
-
   function OnLogicUpdate(event : UpdateEvent)
   {
   }
