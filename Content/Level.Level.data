@@ -41,7 +41,7 @@ Level
 		LevelVars 
 		{
 			var Score = 0
-			var Lives = 3
+			var Lives = 5
 			var BlocksLeft = 36
 			var NextLevel = "5caf27dbb4f2e03e:GameOver"
 		}
@@ -84,7 +84,7 @@ Level
 		var Name = "EditorCamera"
 		Transform 
 		{
-			var Translation = Real3{1.81229234, 3.52680612, 24.428051}
+			var Translation = Real3{-2.52122974, 2.39634013, 24.428051}
 			var Scale = Real3{1, 1, 1}
 			var Rotation = Quaternion{0, -1.09278471e-08, 0, 1}
 		}
@@ -137,7 +137,7 @@ Level
 			var FarPlane = 500
 			var PerspectiveMode = PerspectiveMode.Orthographic
 			var FieldOfView = 45
-			var Size = 14.1572428
+			var Size = 21.1201458
 		}
 		EditorCameraController 
 		{
@@ -146,7 +146,7 @@ Level
 			var LookDistance = 24.428051
 			var VerticalAngle = 0
 			var HorizontalAngle = 0
-			var LookTarget = Real3{1.81229234, 3.52680612, 2.76232299e-07}
+			var LookTarget = Real3{-2.52122974, 2.39634013, 8.68078374e-08}
 			var MoveSensitivity = 1
 		}
 	}
@@ -646,21 +646,12 @@ Level
 			var FireOffset = Real3{0, 0.5, 0}
 			var FireSound = "5caf0817d7ec3e78:EnemyFire"
 		}
-		PointsOnDestruction 
-		{
-			var Points = 0
-		}
 		HealthPLAYER_ 
 		{
 			var NextLevel = "5caf27dbb4f2e03e:GameOver"
 			var MaxHP = 100
 			var SendDeathEvent = true
-			var DestroyAt0HP = true
-		}
-		DestroyOnCollideENEMY 
-		{
-			var DeathDelay = 0.0500000007
-			var NextLevel = "5caf27dbb4f2e03e:GameOver"
+			var DestroyAt0HP = false
 		}
 	}
 	Cog [InheritId:"5cea1cda9f76ae7a:PlayerLife"][ContextId:17]
@@ -1116,11 +1107,6 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
-		AlienShooting 
-		{
-			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 15
-		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:55]
 	{
@@ -1130,11 +1116,6 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
-		AlienShooting 
-		{
-			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 15
-		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:56]
 	{
@@ -1143,11 +1124,6 @@ Level
 			var Translation = Real3{-1.25000048, 0.499999762, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
-		}
-		AlienShooting 
-		{
-			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 15
 		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:57]
@@ -1167,11 +1143,6 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
-		AlienShooting 
-		{
-			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 15
-		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:59]
 	{
@@ -1180,11 +1151,6 @@ Level
 			var Translation = Real3{1.24999952, 0.499999762, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
-		}
-		AlienShooting 
-		{
-			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 15
 		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:60]
@@ -1195,11 +1161,6 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
-		AlienShooting 
-		{
-			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 15
-		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:61]
 	{
@@ -1208,11 +1169,6 @@ Level
 			var Translation = Real3{5, 0.499999762, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
-		}
-		AlienShooting 
-		{
-			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 15
 		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:62]
@@ -1223,11 +1179,6 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
-		AlienShooting 
-		{
-			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 15
-		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:63]
 	{
@@ -1237,11 +1188,6 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
 		}
-		AlienShooting 
-		{
-			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 15
-		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:64]
 	{
@@ -1250,11 +1196,6 @@ Level
 			var Translation = Real3{2.49999952, 0.499999762, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1.00000012}
-		}
-		AlienShooting 
-		{
-			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 15
 		}
 	}
 	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:65]
@@ -1393,7 +1334,7 @@ Level
 	{
 		Transform 
 		{
-			var Translation = Real3{15.6250057, -2.92039037, 5.60986393e-07}
+			var Translation = Real3{-12.3519497, 10.5246525, 5.60986393e-07}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1}
 		}
@@ -1455,13 +1396,9 @@ Level
 		var Name = "EnemyLaserStraight"
 		Transform 
 		{
-			var Translation = Real3{19.3750057, -2.92039037, 5.60986393e-07}
+			var Translation = Real3{-12.5453949, 10.5670252, 5.60986393e-07}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1}
-		}
-		DestroyOnCollideENEMY 
-		{
-			var DeathDelay = 0
 		}
 	}
 }

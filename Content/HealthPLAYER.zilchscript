@@ -37,6 +37,17 @@ class HealthPLAYER_ : ZilchComponent
 
   function OnHealthChange(event : HealthChange)
   {
-    this.Space.LoadLevel(this.NextLevel);
+    if(this.CurrentHP <= 0)
+    {
+      if(this.GameSession.LevelVars.Lives > 1)
+        {
+          this.GameSession.LevelVars.Lives -= 1;
+          this.Owner.Transform.Translation = Real3(0, -7, 0);
+        }
+       else if(this.GameSession.LevelVars.Lives <= 0)
+       {
+         this.Space.LoadLevel(this.NextLevel);
+       }
+    }
   }
 }

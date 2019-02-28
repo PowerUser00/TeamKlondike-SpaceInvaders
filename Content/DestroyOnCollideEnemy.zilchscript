@@ -6,7 +6,7 @@ Destroies the owner on colision.
 class DestroyOnCollideENEMY : ZilchComponent
 {
   [Property]
-  var DeathDelay : Real = 0.05;
+  var DeathDelay : Real = 0;
   [Property]
   var ResetFire : Cog = null;
   [Property]
@@ -23,21 +23,15 @@ class DestroyOnCollideENEMY : ZilchComponent
     //add delay to action sequence
     Actions.Delay(seq, this.DeathDelay);
     //////DESTROY
-    Actions.Call(seq, this.Owner.Destroy);
+      Actions.Call(seq, this.Owner.Destroy);
     //this.LevelSettings.LevelVars.BlocksLeft -= 1;
   }
     function Destroyed()
   {
     if(this.ResetFire != null && this.ResetFire.MarkedForDestruction != true)
     {
-      if(this.GameSession.LevelVars.Lives > 1)
-      {
-        this.Owner.Transform.Translation = Real3(0, -7, 0);
-        this.GameSession.LevelVars.Lives -= 1;
-      }
       if(this.Owner != null && this.NextLevel != null)
       this.ResetFire.AlienShooting.CanFire = true;
-      this.Space.LoadLevel(this.NextLevel);
     }
   }
 }
