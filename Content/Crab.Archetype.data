@@ -4,8 +4,8 @@ Cog
 	var Name = "Crab"
 	Transform 
 	{
-		var Translation = Real3{-6.25, 4.75, 0}
-		var Scale = Real3{5, 5, 1.00000012}
+		var Translation = Real3{-6.25, 2.49999976, 0}
+		var Scale = Real3{1, 1, 1}
 		var Rotation = Quaternion{0, 0, 0, 1}
 	}
 	Sprite 
@@ -20,7 +20,7 @@ Cog
 		var Material = "582c575af53d18c9:AlphaSprite"
 		var VertexColor = Real4{1, 1, 1, 1}
 		var GeometryMode = SpriteGeometryMode.ZPlane
-		var SpriteSource = "5cc77bb3dd5f24ea:large_invader"
+		var SpriteSource = "5ca268f47b5d5882:Crab000"
 		var FlipX = false
 		var FlipY = false
 		var AnimationActive = true
@@ -34,7 +34,7 @@ Cog
 		var Material = "4de020863e872da8:DefaultPhysicsMaterial"
 		var CollisionGroup = "4e740859314e5515:DefaultGroup"
 		var Offset = Real3{0, 0, 0}
-		var HalfSize = Real3{0.0939999968, 0.0649999976, 0.5}
+		var HalfSize = Real3{0.5, 0.375, 0.5}
 	}
 	PointsOnDestruction 
 	{
@@ -46,11 +46,7 @@ Cog
 		var SendDeathEvent = true
 		var DestroyAt0HP = true
 	}
-	AlienShooting 
+	EnemyMovement 
 	{
-		var Projectile = "null"
-		var ProjSpeed = 20
-		var CanFire = true
-		var FireOffset = Real3{0, -1, 0}
 	}
 }

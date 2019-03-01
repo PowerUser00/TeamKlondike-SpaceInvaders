@@ -1,0 +1,20 @@
+[Version:1]
+ImageContent 
+{
+	SpriteSourceBuilder 
+	{
+		var Name = "Octopus000"
+		var ResourceId = 0x5ca26ba51e130b6a
+		var FrameSizeX = 12
+		var FrameSizeY = 8
+		var FrameCount = 1
+		var FrameDelay = 0.0833333358
+		var OriginX = 6
+		var OriginY = 4
+		var PixelsPerUnit = 12
+		var Sampling = SpriteSampling.Nearest
+		var Looping = true
+		var Slices = Real4{0, 0, 0, 0}
+		var Fill = SpriteFill.Stretch
+	}
+}

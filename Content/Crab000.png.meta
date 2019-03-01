@@ -1,0 +1,20 @@
+[Version:1]
+ImageContent 
+{
+	SpriteSourceBuilder 
+	{
+		var Name = "Crab000"
+		var ResourceId = 0x5ca268f47b5d5882
+		var FrameSizeX = 11
+		var FrameSizeY = 8
+		var FrameCount = 1
+		var FrameDelay = 0.0833333358
+		var OriginX = 5.5
+		var OriginY = 4
+		var PixelsPerUnit = 11
+		var Sampling = SpriteSampling.Nearest
+		var Looping = true
+		var Slices = Real4{0, 0, 0, 0}
+		var Fill = SpriteFill.Stretch
+	}
+}
