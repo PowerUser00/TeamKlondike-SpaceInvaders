@@ -30,6 +30,10 @@ class DestroyOnCollideENEMY : ZilchComponent
       this.GameSession.LevelVars.Lives -= 1;
       this.Space.DispatchEvent("LivesUpdate", ZilchEvent());
     }
+    else if(this.Player == true && this.GameSession.LevelVars.Lives == 1)
+    {
+      this.Space.LoadLevel(this.NextLevel);
+    }
     else
     {
     Actions.Call(seq, this.Owner.Destroy);
@@ -42,7 +46,6 @@ class DestroyOnCollideENEMY : ZilchComponent
     {
       if(this.Owner != null && this.NextLevel != null)
       this.ResetFire.AlienShooting.CanFire = true;
-      this.Space.LoadLevel(this.NextLevel);
     }
   }
 }
