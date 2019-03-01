@@ -11,7 +11,8 @@ class DestroyOnCollideENEMY : ZilchComponent
   var ResetFire : Cog = null;
   [Property]
   var NextLevel : Level = null;
-
+  [Property]
+  var Player : Boolean = false;
   function Initialize(init : CogInitializer)
   {
     Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
@@ -23,21 +24,28 @@ class DestroyOnCollideENEMY : ZilchComponent
     //add delay to action sequence
     Actions.Delay(seq, this.DeathDelay);
     //////DESTROY
+    if(this.Player == true && this.GameSession.LevelVars.Lives > 1)
+    {
+      this.Owner.Transform.Translation = Real3(0, -7, 0);
+      this.GameSession.LevelVars.Lives -= 1;
+      this.Space.DispatchEvent("LivesUpdate", ZilchEvent());
+    }
+    else if(this.Player == true && this.GameSession.LevelVars.Lives == 1)
+    {
+      this.Space.LoadLevel(this.NextLevel);
+    }
+    else
+    {
     Actions.Call(seq, this.Owner.Destroy);
+    }
     //this.LevelSettings.LevelVars.BlocksLeft -= 1;
   }
     function Destroyed()
   {
     if(this.ResetFire != null && this.ResetFire.MarkedForDestruction != true)
     {
-      if(this.GameSession.LevelVars.Lives > 1)
-      {
-        this.Owner.Transform.Translation = Real3(0, -7, 0);
-        this.GameSession.LevelVars.Lives -= 1;
-      }
       if(this.Owner != null && this.NextLevel != null)
       this.ResetFire.AlienShooting.CanFire = true;
-      this.Space.LoadLevel(this.NextLevel);
     }
   }
 }
