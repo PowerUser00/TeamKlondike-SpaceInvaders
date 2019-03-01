@@ -88,7 +88,7 @@ Level
 		var Name = "EditorCamera"
 		Transform 
 		{
-			var Translation = Real3{5.45073843, 0.656078756, 24.428051}
+			var Translation = Real3{1.7827152, -1.16302228, 24.428051}
 			var Scale = Real3{1, 1, 1}
 			var Rotation = Quaternion{0, -1.09278471e-08, 0, 1}
 		}
@@ -150,7 +150,7 @@ Level
 			var LookDistance = 24.428051
 			var VerticalAngle = 0
 			var HorizontalAngle = 0
-			var LookTarget = Real3{5.45073843, 0.656078756, -2.97205219e-07}
+			var LookTarget = Real3{1.7827152, -1.16302228, -4.57539642e-07}
 			var MoveSensitivity = 1
 		}
 	}
@@ -665,6 +665,7 @@ Level
 		{
 			var DeathDelay = 0.0500000007
 			var NextLevel = "5caf27dbb4f2e03e:GameOver"
+			var Player = true
 		}
 	}
 	Cog [InheritId:"5cea1cda9f76ae7a:PlayerLife"][ContextId:17]
