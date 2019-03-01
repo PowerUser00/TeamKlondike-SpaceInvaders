@@ -27,6 +27,39 @@ SoundCue
 			var LoopTailLength = 0
 			var CrossFadeLoopTail = false
 		}
+		Object
+		{
+			var Sound = "5caf09b6c0ea65d9:Highmid"
+			var Weight = 1
+			var StartTime = 0
+			var EndTime = 0.451354176
+			var LoopEndTime = 0.451354176
+			var LoopStartTime = 0
+			var LoopTailLength = 0
+			var CrossFadeLoopTail = false
+		}
+		Object
+		{
+			var Sound = "5caf09b6c0eaf269:Lowmid"
+			var Weight = 1
+			var StartTime = 0
+			var EndTime = 0.451354176
+			var LoopEndTime = 0.451354176
+			var LoopStartTime = 0
+			var LoopTailLength = 0
+			var CrossFadeLoopTail = false
+		}
+		Object
+		{
+			var Sound = "5caf09b6c0e58591:Low"
+			var Weight = 1
+			var StartTime = 0
+			var EndTime = 0.451354176
+			var LoopEndTime = 0.451354176
+			var LoopStartTime = 0
+			var LoopTailLength = 0
+			var CrossFadeLoopTail = false
+		}
 	}
 	var SoundTags = Array
 	{
