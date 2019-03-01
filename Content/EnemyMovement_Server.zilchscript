@@ -34,6 +34,7 @@ class EnemyMovement_Server : ZilchComponent
           this.PreviosDirection = 1;
           this.Direction = 1;
         }
+        this.MoveTime -= 0.08;
       }
       else if(this.Direction == 1)
       {
