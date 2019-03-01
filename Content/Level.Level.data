@@ -48,6 +48,7 @@ Level
 		EnemyMovement_Server 
 		{
 			var MoveTime = 1
+			var SoundSelector = "null"
 		}
 	}
 	Cog [ContextId:2]
@@ -88,7 +89,7 @@ Level
 		var Name = "EditorCamera"
 		Transform 
 		{
-			var Translation = Real3{2.93410206, 0.608291626, 24.428051}
+			var Translation = Real3{-2.16476488, -3.98969626, 24.428051}
 			var Scale = Real3{1, 1, 1}
 			var Rotation = Quaternion{0, -1.09278471e-08, 0, 1}
 		}
@@ -141,7 +142,7 @@ Level
 			var FarPlane = 500
 			var PerspectiveMode = PerspectiveMode.Orthographic
 			var FieldOfView = 45
-			var Size = 17.2917709
+			var Size = 5.46399879
 		}
 		EditorCameraController 
 		{
@@ -150,7 +151,7 @@ Level
 			var LookDistance = 24.428051
 			var VerticalAngle = 0
 			var HorizontalAngle = 0
-			var LookTarget = Real3{2.93410206, 0.608291626, -4.07209399e-07}
+			var LookTarget = Real3{-2.16476488, -3.98969626, -4.69769248e-07}
 			var MoveSensitivity = 1
 		}
 	}
@@ -727,6 +728,10 @@ Level
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -742,6 +747,10 @@ Level
 		Sprite 
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -759,6 +768,10 @@ Level
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -774,6 +787,10 @@ Level
 		Sprite 
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -791,6 +808,10 @@ Level
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -806,6 +827,10 @@ Level
 		Sprite 
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -823,6 +848,10 @@ Level
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -838,6 +867,10 @@ Level
 		Sprite 
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -855,6 +888,10 @@ Level
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -870,6 +907,10 @@ Level
 		Sprite 
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -887,6 +928,10 @@ Level
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -898,6 +943,10 @@ Level
 			var Translation = Real3{-6.25, 2.49999976, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1}
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 	}
 	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:33]
@@ -911,6 +960,10 @@ Level
 		Sprite 
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -928,6 +981,10 @@ Level
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -943,6 +1000,10 @@ Level
 		Sprite 
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -960,6 +1021,10 @@ Level
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -975,6 +1040,10 @@ Level
 		Sprite 
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -992,6 +1061,10 @@ Level
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1007,6 +1080,10 @@ Level
 		Sprite 
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1024,6 +1101,10 @@ Level
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1039,6 +1120,10 @@ Level
 		Sprite 
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1056,6 +1141,10 @@ Level
 		{
 			var SpriteSource = "5ca268f47b5d5882:Crab000"
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1068,6 +1157,10 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:44]
 	{
@@ -1076,6 +1169,10 @@ Level
 			var Translation = Real3{3.75, 1.49999976, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1089,6 +1186,10 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1100,6 +1201,10 @@ Level
 			var Translation = Real3{-3.75, 1.49999976, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1113,6 +1218,10 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1124,6 +1233,10 @@ Level
 			var Translation = Real3{1.24999952, 1.49999976, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1137,6 +1250,10 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1148,6 +1265,10 @@ Level
 			var Translation = Real3{5, 1.49999976, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1161,6 +1282,10 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1172,6 +1297,10 @@ Level
 			var Translation = Real3{-2.5, 1.49999976, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1185,6 +1314,10 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1196,6 +1329,10 @@ Level
 			var Translation = Real3{-6.25, 0.499999762, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyAdded]
 		{
@@ -1214,6 +1351,10 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyAdded]
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
@@ -1230,6 +1371,10 @@ Level
 			var Translation = Real3{-1.25000048, 0.499999762, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyAdded]
 		{
@@ -1248,6 +1393,10 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyAdded]
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
@@ -1264,6 +1413,10 @@ Level
 			var Translation = Real3{6.25, 0.499999762, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyAdded]
 		{
@@ -1282,6 +1435,10 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyAdded]
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
@@ -1298,6 +1455,10 @@ Level
 			var Translation = Real3{-5, 0.499999762, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyAdded]
 		{
@@ -1316,6 +1477,10 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyAdded]
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
@@ -1332,6 +1497,10 @@ Level
 			var Translation = Real3{-4.76837158e-07, 0.499999762, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyAdded]
 		{
@@ -1350,6 +1519,10 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyAdded]
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
@@ -1366,6 +1539,10 @@ Level
 			var Translation = Real3{2.49999952, 0.499999762, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyAdded]
 		{
@@ -1384,6 +1561,10 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 	}
 	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:66]
 	{
@@ -1392,6 +1573,10 @@ Level
 			var Translation = Real3{3.75, 4.5, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1405,6 +1590,10 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1416,6 +1605,10 @@ Level
 			var Translation = Real3{-3.75, 4.5, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1429,6 +1622,10 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1440,6 +1637,10 @@ Level
 			var Translation = Real3{1.24999952, 4.5, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1453,6 +1654,10 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1464,6 +1669,10 @@ Level
 			var Translation = Real3{5, 4.5, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1477,6 +1686,10 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1489,6 +1702,10 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
 		}
+		Health 
+		{
+			var MaxHP = 25
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1500,6 +1717,10 @@ Level
 			var Translation = Real3{2.49999952, 4.5, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
+		}
+		Health 
+		{
+			var MaxHP = 25
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1575,13 +1796,52 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{5, 5, 1}
 		}
+	}
+	Cog [InheritId:"5ca32f87ea28c8dc:BarrierBlockCenter"][ContextId:82]
+	{
+		Transform 
+		{
+			var Translation = Real3{-2.33333302, -4, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{1, 1, 1}
+		}
+	}
+	Cog [InheritId:"5ca32f87ea28c8dc:BarrierBlockCenter"][ContextId:83]
+	{
+		Transform 
+		{
+			var Translation = Real3{-2, -4, 0}
+			var Rotation = Quaternion{0, 0, 0, 1}
+			var Scale = Real3{1, 1, 1}
+		}
+	}
+	Cog [ContextId:84]
+	{
+		var Name = "Sprite"
+		Transform 
+		{
+			var Translation = Real3{-2.16476488, -3.98969626, -4.69769248e-07}
+			var Scale = Real3{1, 1, 1}
+			var Rotation = Quaternion{0, 0, 0, 1}
+		}
 		Sprite 
 		{
-			var SpriteSource = "5cc77bb3dd501751:laser"
-		}
-		DestroyOnCollideENEMY 
-		{
-			var DeathDelay = 0
+			var Visible = true
+			var ViewCulling = true
+			var VisibilityEvents = true
+			var OverrideBoundingBox = false
+			var LocalAabbCenter = Real3{0, 0, 0}
+			var LocalAabbHalfExtents = Real3{1, 1, 1}
+			var GroupSortValue = 0
+			var Material = "582c575af53d18c9:AlphaSprite"
+			var VertexColor = Real4{1, 1, 1, 1}
+			var GeometryMode = SpriteGeometryMode.ZPlane
+			var SpriteSource = "5586f579ca73ecc2:SquareBordered"
+			var FlipX = false
+			var FlipY = false
+			var AnimationActive = true
+			var AnimationSpeed = 1
+			var StartFrame = 0
 		}
 	}
 }

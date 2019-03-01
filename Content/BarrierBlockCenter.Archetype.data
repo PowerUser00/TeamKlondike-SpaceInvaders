@@ -1,11 +1,11 @@
 [Version:1]
 Cog 
 {
-	var Name = "EnemyLaserStraight"
+	var Name = "BarrierBlockCenter"
 	Transform 
 	{
-		var Translation = Real3{19.3750057, -2.92039037, 5.60986393e-07}
-		var Scale = Real3{5, 5, 1}
+		var Translation = Real3{-2.33333302, -4, 0}
+		var Scale = Real3{1, 1, 1}
 		var Rotation = Quaternion{0, 0, 0, 1}
 	}
 	Sprite 
@@ -20,22 +20,18 @@ Cog
 		var Material = "582c575af53d18c9:AlphaSprite"
 		var VertexColor = Real4{1, 1, 1, 1}
 		var GeometryMode = SpriteGeometryMode.ZPlane
-		var SpriteSource = "5cc77bb3dd501751:laser"
+		var SpriteSource = "5ca32b2a88a610de:ShieldBlock000"
 		var FlipX = false
 		var FlipY = false
 		var AnimationActive = true
 		var AnimationSpeed = 1
 		var StartFrame = 0
 	}
-	RigidBody 
+	Health 
 	{
-		var Velocity = Real3{0, 0, 0}
-		var AngularVelocity = Real3{0, 0, 0}
-		var DynamicState = RigidBodyDynamicState.Dynamic
-		var AllowSleep = true
-		var Asleep = false
-		var RotationLocked = false
-		var Mode2D = Mode2DStates.InheritFromSpace
+		var MaxHP = 100
+		var SendDeathEvent = true
+		var DestroyAt0HP = true
 	}
 	BoxCollider 
 	{
@@ -43,18 +39,13 @@ Cog
 		var SendsEvents = true
 		var Material = "4de020863e872da8:DefaultPhysicsMaterial"
 		var CollisionGroup = "4e740859314e5515:DefaultGroup"
-		var Offset = Real3{0.00781999994, 0, 0}
-		var HalfSize = Real3{0.00779999979, 0.03125, 0.5}
+		var Offset = Real3{0, 0, 0}
+		var HalfSize = Real3{0.166666657, 0.166666493, 0.5}
 	}
-	DestroyOnCollideENEMY 
+	BarrierDegrade 
 	{
-		var DeathDelay = 0
-		var NextLevel = "null"
-		var Player = false
-	}
-	DamageOnCollide 
-	{
-		var Damage = 25
-		var Cooldown = 0.5
+		var StageTwo = "5ca32b2a88a14b7d:ShieldBlock001"
+		var StageThree = "5ca32b2a88a0800c:ShieldBlock002"
+		var StageFour = "5ca32b2a88a2fe22:ShieldBlock003"
 	}
 }

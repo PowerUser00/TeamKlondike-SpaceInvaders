@@ -52,7 +52,7 @@ Cog
 	}
 	DamageOnCollide 
 	{
-		var Damage = 100
+		var Damage = 25
 		var Cooldown = 0.5
 	}
 }

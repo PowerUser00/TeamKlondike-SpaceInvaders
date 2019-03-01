@@ -1,0 +1,30 @@
+class BarrierDegrade : ZilchComponent
+{
+  [Dependency]
+  var Sprite : Sprite = null;
+  [Property]
+  var StageTwo: SpriteSource = SpriteSource.SquareBordered;
+  [Property]
+  var StageThree: SpriteSource = SpriteSource.SquareBordered;
+  [Property]
+  var StageFour: SpriteSource = SpriteSource.SquareBordered;
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+  }
+function OnLogicUpdate(event : UpdateEvent)
+  {
+    if (this.Owner.Health.CurrentHP == 75)
+    {
+      this.Owner.Sprite.SpriteSource = this.StageTwo;
+    }
+    if (this.Owner.Health.CurrentHP == 50)
+    {
+      this.Owner.Sprite.SpriteSource = this.StageThree;
+    }
+    if (this.Owner.Health.CurrentHP == 25)
+    {
+      this.Owner.Sprite.SpriteSource = this.StageFour;
+    }
+  }
+}

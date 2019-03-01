@@ -1,0 +1,11 @@
+[Version:1]
+DataContent 
+{
+	DataBuilder 
+	{
+		var Name = "BarrierBlockCenter"
+		var ResourceId = 0x5ca32f87ea28c8dc
+		var LoaderType = "Cog"
+		var Version = 0
+	}
+}
