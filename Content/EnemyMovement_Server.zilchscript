@@ -7,7 +7,8 @@ class EnemyMovement_Server : ZilchComponent
   [Property]
   var MoveTime : Real = 1;
   var Timer : Real = 0;
-  
+  [Property]
+  var SoundSelector : SoundCue = null;
   function Initialize(init : CogInitializer)
   {
     Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
@@ -35,15 +36,19 @@ class EnemyMovement_Server : ZilchComponent
           this.Direction = 1;
         }
         this.MoveTime -= 0.08;
+        this.Space.SoundSpace.PlayCue(this.SoundSelector);
       }
       else if(this.Direction == 1)
       {
         this.Space.DispatchEvent("MoveRight", ZilchEvent());
+        this.Space.SoundSpace.PlayCue(this.SoundSelector);
+
 
       }
       else if(this.Direction == -1)
       {
         this.Space.DispatchEvent("MoveLeft", ZilchEvent());
+        this.Space.SoundSpace.PlayCue(this.SoundSelector);
       }
       
       
