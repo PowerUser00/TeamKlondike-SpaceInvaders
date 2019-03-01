@@ -1,0 +1,9 @@
+[Version:1]
+TextContent 
+{
+	ZilchScriptBuilder 
+	{
+		var Name = "PlayerAnimation"
+		var ResourceId = 0x5ca263a7a122a4e2
+	}
+}

@@ -1,0 +1,24 @@
+class PlayerAnimation : ZilchComponent
+{
+  [Dependency]
+  var Sprite : Sprite = null;
+  [Property]
+  var PlayerIdle : SpriteSource = SpriteSource.SquareBordered;
+  [Property]
+  var PlayerDeath : SpriteSource = SpriteSource.SquareBordered;
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(this.Space, "PlayerDeath", this.OnPlayerDeath);
+    Zero.Connect(this.Space, "PlayerRespawn", this.OnPlayerRespawn);
+  }
+
+  function OnPlayerRespawn(event : Event)
+  {
+    this.Sprite.SpriteSource = this.PlayerIdle;
+  }
+
+  function OnPlayerDeath(event : Event)
+  {
+    this.Sprite.SpriteSource = this.PlayerDeath;
+  }
+}
