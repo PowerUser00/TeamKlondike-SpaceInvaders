@@ -11,7 +11,7 @@ class EnemyMovement : ZilchComponent
   function OnMoveLeft(event : Event)
   {
     this.Owner.Transform.Translation += Real3(-0.25,0,0);
-    if(this.Owner.Transform.Translation.X > -10.75)
+    if(this.Owner.Transform.Translation.X < -10.75)
       this.LevelSettings.EnemyMovement_Server.Direction = 0;
 
   }
