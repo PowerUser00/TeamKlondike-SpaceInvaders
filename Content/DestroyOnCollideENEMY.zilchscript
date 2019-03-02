@@ -35,7 +35,7 @@ class DestroyOnCollideENEMY : ZilchComponent
     //////DESTROY
     if(this.Player == true && this.GameSession.LevelVars.Lives > 1)
     {
-      this.Owner.Transform.Translation = Real3(0, -7, 0);
+      this.Owner.Transform.Translation = Real3(-7, -7, 0);
       this.GameSession.LevelVars.Lives -= 1;
       this.Space.DispatchEvent("LivesUpdate", ZilchEvent());
     }

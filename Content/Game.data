@@ -36,8 +36,8 @@ GameSession
 	}
 	LevelVars 
 	{
-		var Score = 10080
-		var Lives = 2
+		var Score = 0
+		var Lives = 3
 		var BlocksLeft = 36
 		var NextLevel = "null"
 	}

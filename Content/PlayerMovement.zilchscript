@@ -14,6 +14,18 @@ class PlayerMovement : ZilchComponent
   function Initialize(init : CogInitializer)
   {
     Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    Zero.Connect(this.Space, "PlayerDeath", this.OnPlayerDeath);
+    Zero.Connect(this.Space, "PlayerRespawn", this.OnPlayerRespawn);
+  }
+
+  function OnPlayerRespawn(event : Event)
+  {
+    this.CanMove = true;
+  }
+
+  function OnPlayerDeath(event : Event)
+  {
+    this.CanMove = false;
   }
   
   function OnLogicUpdate(event : UpdateEvent)
@@ -21,11 +33,11 @@ class PlayerMovement : ZilchComponent
     var movement = Real3();
     
     //Check for left/right movement
-    if (Zero.Keyboard.KeyIsDown(this.LeftKey) && CanMove == true)
+    if (Zero.Keyboard.KeyIsDown(this.LeftKey) && this.CanMove == true)
     {
       movement.X = -0.134375;
     }
-    if (Zero.Keyboard.KeyIsDown(this.RightKey) && CanMove == true)
+    if (Zero.Keyboard.KeyIsDown(this.RightKey) && this.CanMove == true)
     {
       movement.X = 0.134375;
     }

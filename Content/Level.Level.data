@@ -89,7 +89,7 @@ Level
 		var Name = "EditorCamera"
 		Transform 
 		{
-			var Translation = Real3{-1.14501858, 1.17859507, 24.428051}
+			var Translation = Real3{-0.163154244, -2.60859656, 24.428051}
 			var Scale = Real3{1, 1, 1}
 			var Rotation = Quaternion{0, -1.09278471e-08, 0, 1}
 		}
@@ -151,7 +151,7 @@ Level
 			var LookDistance = 24.428051
 			var VerticalAngle = 0
 			var HorizontalAngle = 0
-			var LookTarget = Real3{-1.14501858, 1.17859507, -4.25194713e-07}
+			var LookTarget = Real3{-0.163154244, -2.60859656, -3.82275999e-07}
 			var MoveSensitivity = 1
 		}
 	}
@@ -633,6 +633,7 @@ Level
 		{
 			var LeftKey = Keys.A
 			var RightKey = Keys.D
+			var CanMove = true
 		}
 		BoxCollider 
 		{
