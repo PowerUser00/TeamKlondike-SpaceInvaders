@@ -18,8 +18,8 @@ class EnemyMovement : ZilchComponent
     this.Owner.Transform.Translation += Real3(-0.25,0,0);
     if(this.Owner.Transform.Translation.X < -10.75)
       this.LevelSettings.EnemyMovement_Server.Direction = 0;
-    if(this.I % 2 == 0)
-      this.Sprite.SpriteSource = this.StageOne;
+   // if(this.I % 2 == 0)
+   //   this.Sprite.SpriteSource = this.StageOne;
 
   
   }
@@ -34,8 +34,8 @@ class EnemyMovement : ZilchComponent
     this.Owner.Transform.Translation += Real3(0.25,0,0);
     if(this.Owner.Transform.Translation.X > 10.75)
       this.LevelSettings.EnemyMovement_Server.Direction = 0;
-    if(this.I % 2 == 0)
-      this.Sprite.SpriteSource = this.StageTwo;
+  //  if(this.I % 2 == 0)
+  //    this.Sprite.SpriteSource = this.StageTwo;
   }
 
   function OnLogicUpdate(event : UpdateEvent)
