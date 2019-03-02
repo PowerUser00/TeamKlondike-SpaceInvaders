@@ -89,7 +89,7 @@ Level
 		var Name = "EditorCamera"
 		Transform 
 		{
-			var Translation = Real3{-1.26691079, -3.82063913, 24.428051}
+			var Translation = Real3{-0.163154244, -2.60859656, 24.428051}
 			var Scale = Real3{1, 1, 1}
 			var Rotation = Quaternion{0, -1.09278471e-08, 0, 1}
 		}
@@ -142,7 +142,7 @@ Level
 			var FarPlane = 500
 			var PerspectiveMode = PerspectiveMode.Orthographic
 			var FieldOfView = 45
-			var Size = 20.0490265
+			var Size = 18.1411152
 		}
 		EditorCameraController 
 		{
@@ -151,7 +151,7 @@ Level
 			var LookDistance = 24.428051
 			var VerticalAngle = 0
 			var HorizontalAngle = 0
-			var LookTarget = Real3{-1.26691079, -3.82063913, -4.30522704e-07}
+			var LookTarget = Real3{-0.163154244, -2.60859656, -3.82275999e-07}
 			var MoveSensitivity = 1
 		}
 	}
@@ -633,6 +633,7 @@ Level
 		{
 			var LeftKey = Keys.A
 			var RightKey = Keys.D
+			var CanMove = true
 		}
 		BoxCollider 
 		{
@@ -1353,7 +1354,7 @@ Level
 		AlienShooting [LocallyAdded]
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 4
+			var ProjSpeed = 15
 			var CanFire = true
 			var FireOffset = Real3{0, -1, 0}
 			var FireSound = "null"
@@ -1374,7 +1375,7 @@ Level
 		AlienShooting [LocallyAdded]
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 4
+			var ProjSpeed = 15
 			var CanFire = true
 			var FireOffset = Real3{0, -1, 0}
 			var FireSound = "null"
@@ -1395,7 +1396,7 @@ Level
 		AlienShooting [LocallyAdded]
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 4
+			var ProjSpeed = 15
 			var CanFire = true
 			var FireOffset = Real3{0, -1, 0}
 			var FireSound = "null"
@@ -1416,7 +1417,7 @@ Level
 		AlienShooting [LocallyAdded]
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 4
+			var ProjSpeed = 15
 			var CanFire = true
 			var FireOffset = Real3{0, -1, 0}
 			var FireSound = "null"
@@ -1437,7 +1438,7 @@ Level
 		AlienShooting [LocallyAdded]
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 4
+			var ProjSpeed = 15
 			var CanFire = true
 			var FireOffset = Real3{0, -1, 0}
 			var FireSound = "null"
@@ -1458,7 +1459,7 @@ Level
 		AlienShooting [LocallyAdded]
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 4
+			var ProjSpeed = 15
 			var CanFire = true
 			var FireOffset = Real3{0, -1, 0}
 			var FireSound = "null"
@@ -1479,7 +1480,7 @@ Level
 		AlienShooting [LocallyAdded]
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 4
+			var ProjSpeed = 15
 			var CanFire = true
 			var FireOffset = Real3{0, -1, 0}
 			var FireSound = "null"
@@ -1500,7 +1501,7 @@ Level
 		AlienShooting [LocallyAdded]
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 4
+			var ProjSpeed = 15
 			var CanFire = true
 			var FireOffset = Real3{0, -1, 0}
 			var FireSound = "null"
@@ -1521,7 +1522,7 @@ Level
 		AlienShooting [LocallyAdded]
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 4
+			var ProjSpeed = 15
 			var CanFire = true
 			var FireOffset = Real3{0, -1, 0}
 			var FireSound = "null"
@@ -1542,7 +1543,7 @@ Level
 		AlienShooting [LocallyAdded]
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 4
+			var ProjSpeed = 15
 			var CanFire = true
 			var FireOffset = Real3{0, -1, 0}
 			var FireSound = "null"
@@ -1563,7 +1564,7 @@ Level
 		AlienShooting [LocallyAdded]
 		{
 			var Projectile = "5cea09aca949c76a:EnemyLaserStraight"
-			var ProjSpeed = 4
+			var ProjSpeed = 15
 			var CanFire = true
 			var FireOffset = Real3{0, -1, 0}
 			var FireSound = "null"
@@ -1957,7 +1958,7 @@ Level
 		var Name = "BarrierBlockLowerLeft"
 		Transform 
 		{
-			var Translation = Real3{1.90807223, -5.55806112, 0}
+			var Translation = Real3{1.90807211, -5.55806112, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1}
 		}
@@ -1996,7 +1997,7 @@ Level
 	{
 		Transform 
 		{
-			var Translation = Real3{1.90807247, -5.22472763, 0}
+			var Translation = Real3{1.90807235, -5.22472763, 0}
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1}
 		}
