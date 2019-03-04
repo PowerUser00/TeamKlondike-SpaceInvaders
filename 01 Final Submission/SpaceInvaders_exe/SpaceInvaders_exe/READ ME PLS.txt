@@ -1,0 +1,2 @@
+The Game Audio works while it's not compiled, however, when compiled, it becomes randomized.
+For previous versions, please go to https://goo.gl/CZi9kE
