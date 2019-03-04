@@ -5,7 +5,7 @@ class EnemyMovement_Server : ZilchComponent
   var PreviosDirection = 1;
   
   [Property]
-  var MoveTime : Real = 1;
+  var MoveTime : Real = 0.5;
   var Timer : Real = 0;
   [Property]
   var SoundSelector : SoundCue = null;
@@ -35,7 +35,7 @@ class EnemyMovement_Server : ZilchComponent
           this.PreviosDirection = 1;
           this.Direction = 1;
         }
-        this.MoveTime -= 0.08;
+        this.MoveTime -= 0.04;
         this.Space.SoundSpace.PlayCue(this.SoundSelector);
       }
       else if(this.Direction == 1)

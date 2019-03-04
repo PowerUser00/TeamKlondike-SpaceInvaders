@@ -47,8 +47,8 @@ Level
 		}
 		EnemyMovement_Server 
 		{
-			var MoveTime = 1
-			var SoundSelector = "null"
+			var MoveTime = 0.660000026
+			var SoundSelector = "5caf09b6c0e6f7cc:High"
 		}
 	}
 	Cog [ContextId:2]
@@ -89,7 +89,7 @@ Level
 		var Name = "EditorCamera"
 		Transform 
 		{
-			var Translation = Real3{-0.163154244, -2.60859656, 24.428051}
+			var Translation = Real3{-0.965395689, -0.0275959, 24.428051}
 			var Scale = Real3{1, 1, 1}
 			var Rotation = Quaternion{0, -1.09278471e-08, 0, 1}
 		}
@@ -142,7 +142,7 @@ Level
 			var FarPlane = 500
 			var PerspectiveMode = PerspectiveMode.Orthographic
 			var FieldOfView = 45
-			var Size = 18.1411152
+			var Size = 22.0833645
 		}
 		EditorCameraController 
 		{
@@ -151,7 +151,7 @@ Level
 			var LookDistance = 24.428051
 			var VerticalAngle = 0
 			var HorizontalAngle = 0
-			var LookTarget = Real3{-0.163154244, -2.60859656, -3.82275999e-07}
+			var LookTarget = Real3{-0.965395689, -0.0275959, -4.17343131e-07}
 			var MoveSensitivity = 1
 		}
 	}
@@ -606,7 +606,7 @@ Level
 		var Name = "Player"
 		Transform 
 		{
-			var Translation = Real3{0, -7, 0}
+			var Translation = Real3{-6.99999952, -7, 0}
 			var Scale = Real3{1, 1, 1}
 			var Rotation = Quaternion{0, 0, 0, 1}
 		}
@@ -749,6 +749,11 @@ Level
 		{
 			var MaxHP = 25
 		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -768,6 +773,11 @@ Level
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -789,6 +799,11 @@ Level
 		{
 			var MaxHP = 25
 		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -808,6 +823,11 @@ Level
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -829,6 +849,11 @@ Level
 		{
 			var MaxHP = 25
 		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -848,6 +873,11 @@ Level
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -869,6 +899,11 @@ Level
 		{
 			var MaxHP = 25
 		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -888,6 +923,11 @@ Level
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -909,6 +949,11 @@ Level
 		{
 			var MaxHP = 25
 		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -928,6 +973,11 @@ Level
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -949,6 +999,11 @@ Level
 		{
 			var MaxHP = 25
 		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -961,9 +1016,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca268f47b5d5882:Crab000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
 		}
 	}
 	Cog [InheritId:"5cc7fd3827a792e2:Crab"][ContextId:33]
@@ -981,6 +1045,11 @@ Level
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1002,6 +1071,11 @@ Level
 		{
 			var MaxHP = 25
 		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1021,6 +1095,11 @@ Level
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1042,6 +1121,11 @@ Level
 		{
 			var MaxHP = 25
 		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1061,6 +1145,11 @@ Level
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1082,6 +1171,11 @@ Level
 		{
 			var MaxHP = 25
 		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1101,6 +1195,11 @@ Level
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1122,6 +1221,11 @@ Level
 		{
 			var MaxHP = 25
 		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1141,6 +1245,11 @@ Level
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1162,6 +1271,11 @@ Level
 		{
 			var MaxHP = 25
 		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca268f47b5d5882:Crab000"
+			var StageTwo = "5ca268f47b5c81e2:Crab001"
+		}
 		AlienShooting [LocallyRemoved]
 		{
 		}
@@ -1174,9 +1288,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 	}
 	Cog [InheritId:"5cc7fd7b139a5e76:Octopus"][ContextId:44]
@@ -1187,9 +1310,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1203,9 +1335,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1219,9 +1360,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1235,9 +1385,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1251,9 +1410,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1267,9 +1435,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1283,9 +1460,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1299,9 +1485,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1315,9 +1510,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1331,9 +1535,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1347,9 +1560,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyAdded]
 		{
@@ -1368,9 +1590,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyAdded]
 		{
@@ -1389,9 +1620,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyAdded]
 		{
@@ -1410,9 +1650,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyAdded]
 		{
@@ -1431,9 +1680,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyAdded]
 		{
@@ -1452,9 +1710,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyAdded]
 		{
@@ -1473,9 +1740,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyAdded]
 		{
@@ -1494,9 +1770,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyAdded]
 		{
@@ -1515,9 +1800,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyAdded]
 		{
@@ -1536,9 +1830,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyAdded]
 		{
@@ -1557,9 +1860,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{1, 1, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26ba51e130b6a:Octopus000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26ba51e130b6a:Octopus000"
+			var StageTwo = "5ca26ba51e12418b:Octopus001"
 		}
 		AlienShooting [LocallyAdded]
 		{
@@ -1578,9 +1890,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26be22a9476ae:Squid000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26be22a9476ae:Squid000"
+			var StageTwo = "5ca26be22a97aa70:Squid001"
 		}
 	}
 	Cog [InheritId:"5cc7fd6f1fa49837:Squid"][ContextId:66]
@@ -1591,9 +1912,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26be22a9476ae:Squid000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26be22a9476ae:Squid000"
+			var StageTwo = "5ca26be22a97aa70:Squid001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1607,9 +1937,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26be22a9476ae:Squid000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26be22a9476ae:Squid000"
+			var StageTwo = "5ca26be22a97aa70:Squid001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1623,9 +1962,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26be22a9476ae:Squid000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26be22a9476ae:Squid000"
+			var StageTwo = "5ca26be22a97aa70:Squid001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1639,9 +1987,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26be22a9476ae:Squid000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26be22a9476ae:Squid000"
+			var StageTwo = "5ca26be22a97aa70:Squid001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1655,9 +2012,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26be22a9476ae:Squid000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26be22a9476ae:Squid000"
+			var StageTwo = "5ca26be22a97aa70:Squid001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1671,9 +2037,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26be22a9476ae:Squid000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26be22a9476ae:Squid000"
+			var StageTwo = "5ca26be22a97aa70:Squid001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1687,9 +2062,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26be22a9476ae:Squid000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26be22a9476ae:Squid000"
+			var StageTwo = "5ca26be22a97aa70:Squid001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1703,9 +2087,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26be22a9476ae:Squid000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26be22a9476ae:Squid000"
+			var StageTwo = "5ca26be22a97aa70:Squid001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1719,9 +2112,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26be22a9476ae:Squid000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26be22a9476ae:Squid000"
+			var StageTwo = "5ca26be22a97aa70:Squid001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
@@ -1735,9 +2137,18 @@ Level
 			var Rotation = Quaternion{0, 0, 0, 1}
 			var Scale = Real3{0.730000019, 0.730000019, 1.00000012}
 		}
+		Sprite 
+		{
+			var SpriteSource = "5ca26be22a9476ae:Squid000"
+		}
 		Health 
 		{
 			var MaxHP = 25
+		}
+		EnemyMovement 
+		{
+			var StageOne = "5ca26be22a9476ae:Squid000"
+			var StageTwo = "5ca26be22a97aa70:Squid001"
 		}
 		AlienShooting [LocallyRemoved]
 		{
