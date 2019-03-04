@@ -1,0 +1,37 @@
+/*
+ *James Ouyang
+ *10/5/18
+ *Add this to objects you wish to damage thigns with Health
+ */
+class DamageOnCollide : ZilchComponent
+{
+  [Property]
+  var Damage : Integer = 10;
+  [Property]
+  var Cooldown : Real = 0.5;
+  var Timer : Real = 0.5;
+  function Initialize(init : CogInitializer)
+  {
+    this.Timer = this.Cooldown;
+    Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    Zero.Connect(this.Owner,Events.CollisionStarted, this.OnCollisionPersisted);
+    Zero.Connect(this.Owner,Events.CollisionPersisted, this.OnCollisionPersisted);
+  }
+  function OnCollisionPersisted(event : CollisionEvent)
+  {
+  if(this.Timer >= this.Cooldown)
+    {
+      //reset time
+      this.Timer = 0;
+      var damageEvent = HealthChange();
+      damageEvent.Damage = this.Damage;
+      event.OtherObject.DispatchEvent(Events.HealthChange, damageEvent);
+    }
+  }    
+    
+  
+
+  function OnLogicUpdate(event : UpdateEvent)
+  {
+  }
+}

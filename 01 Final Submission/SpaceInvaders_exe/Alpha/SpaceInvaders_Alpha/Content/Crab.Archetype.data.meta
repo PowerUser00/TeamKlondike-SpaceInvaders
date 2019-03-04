@@ -1,0 +1,11 @@
+[Version:1]
+DataContent 
+{
+	DataBuilder 
+	{
+		var Name = "Crab"
+		var ResourceId = 0x5cc7fd3827a792e2
+		var LoaderType = "Cog"
+		var Version = 0
+	}
+}

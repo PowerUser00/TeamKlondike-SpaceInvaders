@@ -1,0 +1,25 @@
+class AlienShooting : ZilchComponent
+{
+  [Property]
+  var Projectile : Archetype = null;
+  //speed of the projectile
+  [Property]
+  var ProjSpeed : Real = 1;
+  [Property]
+  var ShootingProbabilityDenominator : Integer = 255;
+  [Property]
+  var FireOffset : Real3 = Real3(0, 1, 0);
+  
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+  }
+
+  function OnLogicUpdate(event : UpdateEvent)
+  {
+    if(this.RandomGenerator.DieRoll(this.ShootingProbabilityDenominator) = this.ShootingProbabilityDenominator)
+    {
+    
+    }
+  }
+}

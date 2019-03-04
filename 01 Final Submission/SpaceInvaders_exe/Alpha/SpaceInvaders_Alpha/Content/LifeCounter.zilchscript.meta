@@ -1,0 +1,9 @@
+[Version:1]
+TextContent 
+{
+	ZilchScriptBuilder 
+	{
+		var Name = "LifeCounter"
+		var ResourceId = 0x5cae7e11536d2d73
+	}
+}

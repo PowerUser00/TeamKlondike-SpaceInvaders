@@ -1,0 +1,9 @@
+[Version:1]
+TextContent 
+{
+	ZilchScriptBuilder 
+	{
+		var Name = "PlayerShoot"
+		var ResourceId = 0x5caa622138ea4c50
+	}
+}
