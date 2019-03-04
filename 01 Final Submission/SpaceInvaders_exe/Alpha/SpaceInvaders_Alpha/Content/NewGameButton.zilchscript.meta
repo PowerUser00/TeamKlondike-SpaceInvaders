@@ -1,0 +1,9 @@
+[Version:1]
+TextContent 
+{
+	ZilchScriptBuilder 
+	{
+		var Name = "NewGameButton"
+		var ResourceId = 0x5caa7296fdfd2fd1
+	}
+}

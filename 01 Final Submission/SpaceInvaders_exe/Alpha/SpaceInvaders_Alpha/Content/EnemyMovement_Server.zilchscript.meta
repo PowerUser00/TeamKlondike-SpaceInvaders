@@ -1,0 +1,9 @@
+[Version:1]
+TextContent 
+{
+	ZilchScriptBuilder 
+	{
+		var Name = "EnemyMovement_Server"
+		var ResourceId = 0x5cae7a6b3b96ecae
+	}
+}

@@ -1,0 +1,41 @@
+/************************************
+Blakely North
+10-22-2018
+A set of universal vars.
+************************************/
+class LevelVars : ZilchComponent
+{
+  [Property]
+  var BlocksLeft : Integer = 36;
+  [Property]
+  var NextLevel : Level = null;
+  var EnemyOffset : Real3 = Real3(0, 1, 0);  
+  var FinalTime : Real = 0;
+  var Timer : Real = 0;
+  /*true = right false = left*/
+var EnemyArray : Array[Boolean] = Array[Boolean](55,true);
+
+  var MovementAmnt : Integer = 1;
+  var CanShootPlayer : Boolean = true;
+  var CanShootEnemy : Boolean = true;
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+  }
+
+  function OnLogicUpdate(event : UpdateEvent)
+  {
+    if(this.BlocksLeft <= 0)
+    {
+      this.Space.LoadLevel(this.NextLevel);
+    }
+    this.Timer += event.Dt;
+    
+    
+    
+    if(this.BlocksLeft <= 0)
+    {
+      this.Space.LevelVars.FinalTime = this.Timer;
+    }
+  }
+}

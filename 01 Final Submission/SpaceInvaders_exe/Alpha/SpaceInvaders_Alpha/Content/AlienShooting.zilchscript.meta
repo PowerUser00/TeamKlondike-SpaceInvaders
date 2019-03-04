@@ -1,0 +1,9 @@
+[Version:1]
+TextContent 
+{
+	ZilchScriptBuilder 
+	{
+		var Name = "AlienShooting"
+		var ResourceId = 0x5caf044b40125d57
+	}
+}

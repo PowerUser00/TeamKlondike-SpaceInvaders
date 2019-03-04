@@ -1,0 +1,62 @@
+//event to transmit damage and healing
+class HealthChange : ZilchEvent
+{
+  var Damage = 1;
+}
+//event to trigger other things when an object dies
+class DeathEvent : ZilchEvent
+{
+  
+}
+
+class Health : ZilchComponent
+{
+  //this adds the events to the event library(Events.something)
+  sends HealthChange : HealthChange;
+  sends DeathEvent : DeathEvent;
+  
+  [Property]
+  var MaxHP : Integer = 100;
+  var CurrentHP : Integer = 100;
+  
+  //do we want to send a death event?
+  [Property]
+  var SendDeathEvent : Boolean = true;
+  //do we want to destroy the owner at 0 hp?
+  [Property]
+  var DestroyAt0HP : Boolean = true;
+  
+  function Initialize(init : CogInitializer)
+  {
+    this.CurrentHP = this.MaxHP;
+    Zero.Connect(this.Owner, Events.HealthChange, this.OnHealthChange);
+    //Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+  }
+
+  function OnHealthChange(event : HealthChange)
+  {
+    this.CurrentHP -= event.Damage;
+    //make sure not over max hp
+    if(this.CurrentHP > this.MaxHP)
+    {
+      this.CurrentHP = this.MaxHP;
+    }
+    //check if at or below 0 hp
+    if (this.CurrentHP <= 0)
+    {
+      if(this.SendDeathEvent)
+      {
+        //make event to send
+        var deathEvent = DeathEvent();
+        //send the event
+        this.Owner.DispatchEvent(Events.DeathEvent, deathEvent);
+      }
+      if(this.DestroyAt0HP)
+      {
+        this.Owner.Destroy();
+      }
+      
+    }
+    
+  }
+}

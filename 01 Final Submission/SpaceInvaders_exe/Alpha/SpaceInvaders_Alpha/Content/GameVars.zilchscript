@@ -1,0 +1,10 @@
+class GameVars : ZilchComponent
+{
+  [Property]
+  var Score : Integer = 0;
+  [Property]
+  var Lives : Integer = 3;
+  function Initialize(init : CogInitializer)
+  {
+  }
+}
