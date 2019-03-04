@@ -1,0 +1,51 @@
+[Version:1]
+Cog 
+{
+	var Name = "BarrierBlockCenter"
+	Transform 
+	{
+		var Translation = Real3{-2.33333302, -4, 0}
+		var Scale = Real3{1, 1, 1}
+		var Rotation = Quaternion{0, 0, 0, 1}
+	}
+	Sprite 
+	{
+		var Visible = true
+		var ViewCulling = true
+		var VisibilityEvents = true
+		var OverrideBoundingBox = false
+		var LocalAabbCenter = Real3{0, 0, 0}
+		var LocalAabbHalfExtents = Real3{1, 1, 1}
+		var GroupSortValue = 0
+		var Material = "582c575af53d18c9:AlphaSprite"
+		var VertexColor = Real4{1, 1, 1, 1}
+		var GeometryMode = SpriteGeometryMode.ZPlane
+		var SpriteSource = "5ca32b2a88a610de:ShieldBlock000"
+		var FlipX = false
+		var FlipY = false
+		var AnimationActive = true
+		var AnimationSpeed = 1
+		var StartFrame = 0
+	}
+	Health 
+	{
+		var MaxHP = 100
+		var SendDeathEvent = true
+		var DestroyAt0HP = true
+	}
+	BoxCollider 
+	{
+		var Ghost = false
+		var SendsEvents = true
+		var Material = "4de020863e872da8:DefaultPhysicsMaterial"
+		var CollisionGroup = "4e740859314e5515:DefaultGroup"
+		var Offset = Real3{0, 0, 0}
+		var HalfSize = Real3{0.166666657, 0.166666493, 0.5}
+	}
+	BarrierDegrade 
+	{
+		var StageTwo = "5ca32b2a88a14b7d:ShieldBlock001"
+		var StageThree = "5ca32b2a88a0800c:ShieldBlock002"
+		var StageFour = "5ca32b2a88a2fe22:ShieldBlock003"
+	}
+}

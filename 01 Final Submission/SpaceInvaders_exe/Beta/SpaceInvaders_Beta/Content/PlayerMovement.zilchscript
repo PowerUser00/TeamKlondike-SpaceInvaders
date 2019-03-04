@@ -1,0 +1,49 @@
+/************************************
+James Ouyang
+2/22/2018
+Allows the player to move left and right along a certain distance
+************************************/
+
+
+class PlayerMovement : ZilchComponent
+{
+  [Property] var LeftKey : Keys = Keys.A;
+  [Property] var RightKey : Keys = Keys.D;
+  [Property] var CanMove : Boolean = true;
+  
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    Zero.Connect(this.Space, "PlayerDeath", this.OnPlayerDeath);
+    Zero.Connect(this.Space, "PlayerRespawn", this.OnPlayerRespawn);
+  }
+
+  function OnPlayerRespawn(event : Event)
+  {
+    this.CanMove = true;
+  }
+
+  function OnPlayerDeath(event : Event)
+  {
+    this.CanMove = false;
+  }
+  
+  function OnLogicUpdate(event : UpdateEvent)
+  {
+    var movement = Real3();
+    
+    //Check for left/right movement
+    if (Zero.Keyboard.KeyIsDown(this.LeftKey) && this.CanMove == true)
+    {
+      movement.X = -0.134375;
+    }
+    if (Zero.Keyboard.KeyIsDown(this.RightKey) && this.CanMove == true)
+    {
+      movement.X = 0.134375;
+    }
+    if((Math.Abs(this.Owner.Transform.Translation.X + movement.X)) <= 11.3)
+    {
+      this.Owner.Transform.Translation += movement;
+    }
+  }
+}

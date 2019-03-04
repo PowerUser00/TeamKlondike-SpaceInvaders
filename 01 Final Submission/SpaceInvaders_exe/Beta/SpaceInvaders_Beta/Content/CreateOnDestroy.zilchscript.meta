@@ -1,0 +1,9 @@
+[Version:1]
+TextContent 
+{
+	ZilchScriptBuilder 
+	{
+		var Name = "CreateOnDestroy"
+		var ResourceId = 0x5ccba3dbd8d9a33a
+	}
+}

@@ -1,0 +1,8 @@
+[Version:1]
+ContentLibrary 
+{
+	var Name = "TeamKlondike-SpaceInvaders"
+	var LibraryId = 0x5c8e0ea8fc1e4181
+	var SourceControlType = ""
+	var ReadOnly = false
+}

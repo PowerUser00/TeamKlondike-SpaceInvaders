@@ -1,0 +1,22 @@
+class PointsOnDestruction : ZilchComponent
+{
+  [Property]
+  var Points: Integer = 0;
+  
+  function Initialize(init : CogInitializer)
+  {
+    
+  }
+
+  function OnLogicUpdate(event : UpdateEvent)
+  {
+    
+  }
+  
+  function Destroyed()
+  {
+      this.GameSession.LevelVars.Score += this.Points;
+      this.Space.DispatchEvent("ScoreUpdate",ZilchEvent());
+      
+  }
+}

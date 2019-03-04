@@ -1,0 +1,18 @@
+class NewGameButton : ZilchComponent
+{
+  [Property]
+  var NextLevel : Level = null;
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(this.Owner, Events.LeftMouseDown, this.OnLeftMouseDown);
+  }
+//functions when mouse is clicked
+  function OnLeftMouseDown(event : ViewportMouseEvent)
+  {
+    this.Space.LoadLevel(this.NextLevel);
+  }
+  function OnLogicUpdate(event : ViewportMouseEvent)
+  {
+    
+  }
+}

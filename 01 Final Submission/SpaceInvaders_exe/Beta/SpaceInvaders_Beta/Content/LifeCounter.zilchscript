@@ -1,0 +1,31 @@
+class LifeCounter : ZilchComponent
+{
+    [Dependency]
+    var Sprite : Sprite = null;
+    [Property]
+    var LifeThreshold : Integer = 3;
+
+
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(this.Space, "LivesUpdate", this.OnLivesUpdate);
+    this.LifeVisibility();
+  }
+
+  function OnLivesUpdate(event : Event)
+  {
+    this.LifeVisibility();
+    
+  }
+  function LifeVisibility()
+  {
+    if(this.GameSession.LevelVars.Lives >= this.LifeThreshold)
+    {
+      this.Owner.Sprite.Visible = true;
+    }
+    else
+    {
+      this.Owner.Sprite.Visible = false;
+    }
+  }
+}

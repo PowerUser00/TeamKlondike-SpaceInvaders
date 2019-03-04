@@ -1,0 +1,53 @@
+class EnemyMovement : ZilchComponent
+{
+  [Property]
+  var StageOne: SpriteSource = null;
+  [Property]
+  var StageTwo: SpriteSource = null;
+  var I : Integer = 0;
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    Zero.Connect(this.Space, "MoveRight", this.OnMoveRight);
+    Zero.Connect(this.Space, "MoveDown", this.OnMoveDown);
+    Zero.Connect(this.Space, "MoveLeft", this.OnMoveLeft);
+  }
+
+  function OnMoveLeft(event : Event)
+  {
+    this.Owner.Transform.Translation += Real3(-0.25,0,0);
+    if(this.Owner.Transform.Translation.X < -10.75)
+      this.LevelSettings.EnemyMovement_Server.Direction = 0;
+    if(this.I % 2 == 0)
+      this.Owner.Sprite.SpriteSource = this.StageOne;
+    if(this.I % 2 == 1)
+      this.Owner.Sprite.SpriteSource = this.StageTwo;
+
+  
+  }
+
+  function OnMoveDown(event : Event)
+  {
+    this.Owner.Transform.Translation += Real3(0,-0.25,0);
+  }
+
+  function OnMoveRight(event : Event)
+  {
+    this.Owner.Transform.Translation += Real3(0.25,0,0);
+    if(this.Owner.Transform.Translation.X > 10.75)
+      this.LevelSettings.EnemyMovement_Server.Direction = 0;
+    if(this.Owner.Transform.Translation.X < -10.75)
+      this.LevelSettings.EnemyMovement_Server.Direction = 0;
+    if(this.I % 2 == 0)
+      this.Owner.Sprite.SpriteSource = this.StageOne;
+    if(this.I % 2 == 1)
+      this.Owner.Sprite.SpriteSource = this.StageTwo;
+  }
+
+  function OnLogicUpdate(event : UpdateEvent)
+  {
+    //what to adjust the player coordinates by
+    [Property]
+    var colum : Real = 0;
+  }
+}

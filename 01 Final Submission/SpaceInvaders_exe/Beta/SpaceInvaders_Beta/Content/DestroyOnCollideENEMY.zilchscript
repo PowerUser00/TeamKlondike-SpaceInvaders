@@ -1,0 +1,66 @@
+/************************************
+Blakely North
+10-22-2018
+Destroies the owner on colision.
+************************************/
+class DestroyOnCollideENEMY : ZilchComponent
+{
+  [Property]
+  var DeathDelay : Real = 1;
+  [Property]
+  var ResetFire : Cog = null;
+  [Property]
+  var NextLevel : Level = null;
+  [Property]
+  var Player : Boolean = false;
+
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+  }
+  function OnCollisionStarted(event : CollisionEvent)
+  {
+    //set up action sequence
+    var seq = Actions.Sequence(this.Owner.Actions);
+    //add delay to action sequence
+    if(this.Player == true)
+    {
+      this.Space.DispatchEvent("PlayerDeath", ZilchEvent());
+    }
+    Actions.Delay(seq, this.DeathDelay);
+    if(this.Player == true)
+    {
+      Actions.Call(seq,this.SendRespawnEvent);
+    }
+    //////DESTROY
+    if(this.Player == true && this.GameSession.LevelVars.Lives > 1)
+    {
+      this.Owner.Transform.Translation = Real3(-7, -7, 0);
+      this.GameSession.LevelVars.Lives -= 1;
+      this.Space.DispatchEvent("LivesUpdate", ZilchEvent());
+    }
+    else if(this.Player == true && this.GameSession.LevelVars.Lives == 1)
+    {
+      this.Space.LoadLevel(this.NextLevel);
+    }
+    else
+    {
+      Actions.Call(seq, this.Owner.Destroy);
+    }
+    //this.LevelSettings.LevelVars.BlocksLeft -= 1;
+  }
+  
+  function SendRespawnEvent()
+  {
+    this.Space.DispatchEvent("PlayerRespawn", ZilchEvent());
+  }
+  
+    function Destroyed()
+  {
+    if(this.ResetFire != null && this.ResetFire.MarkedForDestruction != true)
+    {
+      if(this.Owner != null && this.NextLevel != null)
+      this.ResetFire.AlienShooting.CanFire = true;
+    }
+  }
+}

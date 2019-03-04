@@ -1,0 +1,21 @@
+class AlienAnimation : ZilchComponent
+{
+  [Dependency]
+  var Sprite : Sprite = null;
+  [Property]
+  var AlienClosed : SpriteSource = SpriteSource.SquareBordered;
+  [Property]
+  var AlienOpen : SpriteSource = SpriteSource.SquareBordered;
+  
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+  }
+
+  function OnLogicUpdate(event : UpdateEvent)
+  {
+//    if(this.
+  }
+}        
+
+  

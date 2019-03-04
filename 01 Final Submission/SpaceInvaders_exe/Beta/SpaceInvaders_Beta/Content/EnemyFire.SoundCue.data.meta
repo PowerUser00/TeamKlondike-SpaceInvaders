@@ -1,0 +1,11 @@
+[Version:1]
+DataContent 
+{
+	DataBuilder 
+	{
+		var Name = "EnemyFire"
+		var ResourceId = 0x5caf0817d7ec3e78
+		var LoaderType = "SoundCue"
+		var Version = 0
+	}
+}

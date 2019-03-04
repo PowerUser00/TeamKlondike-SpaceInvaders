@@ -1,0 +1,20 @@
+[Version:1]
+ImageContent 
+{
+	SpriteSourceBuilder 
+	{
+		var Name = "LaserCanonDestroyed_0"
+		var ResourceId = 0x5ca2612c2767fef2
+		var FrameSizeX = 15
+		var FrameSizeY = 8
+		var FrameCount = 4
+		var FrameDelay = 0.027777778
+		var OriginX = 7.5
+		var OriginY = 4
+		var PixelsPerUnit = 15
+		var Sampling = SpriteSampling.Nearest
+		var Looping = true
+		var Slices = Real4{0, 0, 0, 0}
+		var Fill = SpriteFill.Stretch
+	}
+}
