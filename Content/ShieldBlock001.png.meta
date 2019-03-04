@@ -4,14 +4,14 @@ ImageContent
 	SpriteSourceBuilder 
 	{
 		var Name = "ShieldBlock001"
-		var ResourceId = 0x5ca32b2a88a14b7d
+		var ResourceId = 0x5ce0f0105e884145
 		var FrameSizeX = 6
 		var FrameSizeY = 6
 		var FrameCount = 1
 		var FrameDelay = 0.0833333358
 		var OriginX = 3
 		var OriginY = 3
-		var PixelsPerUnit = 18
+		var PixelsPerUnit = 6
 		var Sampling = SpriteSampling.Nearest
 		var Looping = true
 		var Slices = Real4{0, 0, 0, 0}

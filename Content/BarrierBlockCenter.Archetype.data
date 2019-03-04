@@ -4,8 +4,8 @@ Cog
 	var Name = "BarrierBlockCenter"
 	Transform 
 	{
-		var Translation = Real3{-2.33333302, -4, 0}
-		var Scale = Real3{1, 1, 1}
+		var Translation = Real3{-6.42546892, -5.83508825, 0}
+		var Scale = Real3{0.100000001, 0.100000001, 1}
 		var Rotation = Quaternion{0, 0, 0, 1}
 	}
 	Sprite 
@@ -20,7 +20,7 @@ Cog
 		var Material = "582c575af53d18c9:AlphaSprite"
 		var VertexColor = Real4{1, 1, 1, 1}
 		var GeometryMode = SpriteGeometryMode.ZPlane
-		var SpriteSource = "5ca32b2a88a610de:ShieldBlock000"
+		var SpriteSource = "5ce0f0105e93a226:ShieldBlock000"
 		var FlipX = false
 		var FlipY = false
 		var AnimationActive = true
@@ -44,8 +44,8 @@ Cog
 	}
 	BarrierDegrade 
 	{
-		var StageTwo = "5ca32b2a88a14b7d:ShieldBlock001"
-		var StageThree = "5ca32b2a88a0800c:ShieldBlock002"
-		var StageFour = "5ca32b2a88a2fe22:ShieldBlock003"
+		var StageTwo = "5ce0f0105e884145:ShieldBlock001"
+		var StageThree = "5ce0f0105e8ccb1d:ShieldBlock002"
+		var StageFour = "5ce0f0105e813067:ShieldBlock003"
 	}
 }

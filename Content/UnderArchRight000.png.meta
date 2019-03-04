@@ -4,14 +4,14 @@ ImageContent
 	SpriteSourceBuilder 
 	{
 		var Name = "UnderArchRight000"
-		var ResourceId = 0x5ca328e4fec5e9a4
+		var ResourceId = 0x5ce0f74f5360aade
 		var FrameSizeX = 6
 		var FrameSizeY = 5
 		var FrameCount = 1
 		var FrameDelay = 0.0833333358
 		var OriginX = 3
 		var OriginY = 2.5
-		var PixelsPerUnit = 18
+		var PixelsPerUnit = 6
 		var Sampling = SpriteSampling.Nearest
 		var Looping = true
 		var Slices = Real4{0, 0, 0, 0}

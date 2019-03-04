@@ -4,13 +4,13 @@ ImageContent
 	SpriteSourceBuilder 
 	{
 		var Name = "LaserCanon000"
-		var ResourceId = 0x5ca296a5f1b5d7b0
+		var ResourceId = 0x5ce0f60eb66ac6fe
 		var FrameSizeX = 15
-		var FrameSizeY = 8
+		var FrameSizeY = 9
 		var FrameCount = 1
 		var FrameDelay = 0.0833333358
 		var OriginX = 7.5
-		var OriginY = 4
+		var OriginY = 4.5
 		var PixelsPerUnit = 15
 		var Sampling = SpriteSampling.Nearest
 		var Looping = true

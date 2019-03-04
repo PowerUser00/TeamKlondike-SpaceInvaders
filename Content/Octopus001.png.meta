@@ -4,7 +4,7 @@ ImageContent
 	SpriteSourceBuilder 
 	{
 		var Name = "Octopus001"
-		var ResourceId = 0x5ca26ba51e12418b
+		var ResourceId = 0x5ce0f67253f7dcef
 		var FrameSizeX = 12
 		var FrameSizeY = 8
 		var FrameCount = 1
