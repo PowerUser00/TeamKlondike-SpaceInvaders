@@ -1,0 +1,20 @@
+[Version:1]
+ImageContent 
+{
+	SpriteSourceBuilder 
+	{
+		var Name = "UnderArchLeft"
+		var ResourceId = 0x5ca328b4e14594dd
+		var FrameSizeX = 24
+		var FrameSizeY = 6
+		var FrameCount = 1
+		var FrameDelay = 0.0833333358
+		var OriginX = 12
+		var OriginY = 3
+		var PixelsPerUnit = 64
+		var Sampling = SpriteSampling.Linear
+		var Looping = true
+		var Slices = Real4{0, 0, 0, 0}
+		var Fill = SpriteFill.Stretch
+	}
+}

@@ -1,0 +1,11 @@
+[Version:1]
+DataContent 
+{
+	DataBuilder 
+	{
+		var Name = "MainMenu"
+		var ResourceId = 0x5cea1338eceb3ed3
+		var LoaderType = "Level"
+		var Version = 0
+	}
+}

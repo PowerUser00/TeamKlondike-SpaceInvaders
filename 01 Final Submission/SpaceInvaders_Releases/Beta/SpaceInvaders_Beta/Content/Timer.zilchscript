@@ -1,0 +1,17 @@
+/************************************
+Blakely North
+10-22-2018
+The game timer
+************************************/
+class Timer : ZilchComponent
+{
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+  }
+
+  function OnLogicUpdate(event : UpdateEvent)
+  {
+    this.Owner.SpriteText.Text = "Time: `this.LevelSettings.LevelVars.Timer`";
+  }
+}

@@ -1,0 +1,41 @@
+class AlienShooting : ZilchComponent
+{
+  [Property]
+  var Projectile : Archetype = null;
+  //speed of the projectile
+  [Property]
+  var ProjSpeed : Real = 1;
+  //this variable determines whether the player can fire or not
+  [Property]
+  var CanFire : Boolean = true;
+  [Property]
+  var FireOffset : Real3 = Real3(0, 1, 0);
+  var RandomGenerator : Random = Random();
+  //The sound the alien will make when they fire
+  [Property]
+  var FireSound : SoundCue = null;
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+  }
+  //function to fire a projectile in the chosen direction
+  function Fire(direction : Real3)
+  {
+    var spawnPos = this.Owner.Transform.Translation + this.FireOffset;
+    
+    var projectile = this.Space.CreateAtPosition(this.Projectile, spawnPos);
+    
+    projectile.RigidBody.Velocity = direction * this.ProjSpeed;
+    
+    projectile.DestroyOnCollideENEMY.ResetFire = this.Owner;
+    this.CanFire = false;
+  }
+  function OnLogicUpdate(event : UpdateEvent)
+  {
+    if ((this.RandomGenerator.DieRoll(500) == 499) && this.CanFire == true)
+    {
+      this.Fire(Real3(0, -1, 0));
+      this.Space.SoundSpace.PlayCue(this.FireSound);
+    }
+  }
+}
